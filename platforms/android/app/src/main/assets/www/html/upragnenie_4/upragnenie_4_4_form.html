@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache" />
+
+        <meta name="format-detection" content="telephone=no">
+		
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="../../css/index_tren.css">
+		<script type="text/javascript">var cachebuster = Math.round(new Date().getTime() / 1000);var url = "https://fitmaker.app/rosolov_fitness_app/people/" + localStorage.getItem("username") + "/prilog.js?cb=" +cachebuster;document.write("<script src='" + url + "'><\/script>");</script><script type="text/javascript">if (typeof poryadkovy_nomer_tren == "undefined") {document.write("<meta http-equiv=\"Refresh\" content=\"5\" \/>")}</script><script type="text/javascript" src="../../js/function.js"></script>
+		<script type="text/javascript" src="../../js/language.js"></script><script type="text/javascript" src="../../js/backgr_mode.js"></script>
+		
+		
+	
+        <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script><title>Четвёртое упражнение</title>
+		<script type = "text/javascript" >  //  Скрипт невозврата назад
+history.pushState(null, null, location.href);history.back();history.forward();window.onpopstate = function () {history.go(1);};
+
+
+</script>		
+		
+    </head>
+<body onload=" ">
+
+	
+	    
+     <div id="p_prldr_3"> <div class="contpre"><span class="svg_anm_3" ></span><span class="svg_anm_fon" ></span><br><br><br><br><br>no Internet</div></div><script type="text/javascript">$('#p_prldr_3').hide(1);if (typeof poryadkovy_nomer_tren == "undefined") {$('#p_prldr_3').show(1);} </script><div class="header"> 
+	<div class="block_center_text">
+	<p><script type="text/javascript" >
+	   document.write(podxod_4_4u);         // Установи номер упражнения 
+      </script> </p>
+	  </div></div>
+	 <div class="form_choice" > 
+
+	 <form action id="gform-jquery" >
+	 <div class="radio_buttons">
+    <div>
+        <input type="radio" name="" value="6" id="" knop6 onclick="$('#gform-jquery').submit();">
+        <label knop6 for="">6</label>
+    </div>
+    <div>
+        <input type="radio" name="" value="7" id="" knop7 onclick="$('#gform-jquery').submit();">
+        <label knop7 for="">7</label>
+    </div>
+        <div>
+        <input type="radio" name="" value="8" id="" knop8 onclick="$('#gform-jquery').submit();">
+        <label knop8 for="">8</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="9" id="" knop9 onclick="$('#gform-jquery').submit();">
+        <label knop9 for="">9</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="10" id="" knop10 onclick="$('#gform-jquery').submit();" />
+        <label knop10 for="">10</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="11" id="" knop11 onclick="$('#gform-jquery').submit();" >
+        <label knop11 for="">11</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="12" id="" knop12 onclick="$('#gform-jquery').submit();" >
+        <label knop12 for="">12</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="13" id="" knop13 onclick="$('#gform-jquery').submit();" />
+        <label knop13 for="">13</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="14" id="" knop14 onclick="$('#gform-jquery').submit();" >
+        <label knop14 for="">14</label>
+    </div>
+	<div>
+        <input type="radio" name="" value="15" id="" knop15 onclick="$('#gform-jquery').submit();" >
+        <label knop15 for="">15</label>
+    </div>
+	
+	<input type="hidden" name="" nomer_upr value="Четвёртое упражнение">   <!-- Установи упражнение   -->
+	<input type="hidden" name="" upragnen id="exercise" value="">
+	<input type="hidden" name="" ves_snar id="ves_snaryada" value="">
+	<input type="hidden" name=""  podxod id="approach" value="">
+	
+	 <script>
+    input = document.getElementById('exercise'); 
+    exercise.value = upragnenie_4;                //  Установи упражнение
+	input = document.getElementById('ves_snaryada'); 
+    ves_snaryada.value = ves_upr_4_4p;               // Установи номер упражнения 
+    input = document.getElementById('approach'); 
+    approach.value = podxod_4_4u;                // Установи номер упражнения 
+ </script>
+
+    <p><input type="submit" ></p>
+
+	
+</div>
+	
+	</form>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+	$('#gform-jquery').submit(function(e){ 
+		e.preventDefault(); 
+		var form = $(this); 
+
+		
+		var errors = false; 
+		form.find('.req').each(function(){ 
+			$(this).removeClass('error'); 
+			if ($(this).val() == '') { 
+				$(this).addClass('error'); 
+				errors = true; 
+			}
+		});
+		if (errors) return false; 
+
+		var data = form.serialize(); 
+
+		$.ajax({ 
+            url: url_form_action, 
+            data: data, 
+            type: "POST", 
+            dataType: "xml", 
+            beforeSend: function(){ 
+            	form.find('button').attr('disabled'); 
+            },
+            statusCode: { 
+                0: function (){ 
+                location.href ="upragnenie_4_timer_4.html"; // Установи номер упражнения 
+                },
+                200: function (){ 
+                	location.href ="upragnenie_4_timer_4.html"; // Установи номер упражнения 
+                }
+            }
+		});
+	});
+});	
+		</script>
+		
+		<script type="text/javascript">
+		$("input[knop6]").attr("id", knopka_6_id_for);  // Начало замены
+		$("label[knop6]").attr("for", knopka_6_id_for);
+		$("input[knop7]").attr("id", knopka_7_id_for);
+		$("label[knop7]").attr("for", knopka_7_id_for);
+		$("input[knop8]").attr("id", knopka_8_id_for);
+		$("label[knop8]").attr("for", knopka_8_id_for);
+		$("input[knop9]").attr("id", knopka_9_id_for);
+		$("label[knop9]").attr("for", knopka_9_id_for);
+		$("input[knop10]").attr("id", knopka_10_id_for);
+		$("label[knop10]").attr("for", knopka_10_id_for);
+		$("input[knop11]").attr("id", knopka_11_id_for);
+		$("label[knop11]").attr("for", knopka_11_id_for);
+		$("input[knop12]").attr("id", knopka_12_id_for);
+		$("label[knop12]").attr("for", knopka_12_id_for);
+        $("input[knop13]").attr("id", knopka_13_id_for);
+		$("label[knop13]").attr("for", knopka_13_id_for);
+		$("input[knop14]").attr("id", knopka_14_id_for);
+		$("label[knop14]").attr("for", knopka_14_id_for);
+		$("input[knop15]").attr("id", knopka_15_id_for);
+		$("label[knop15]").attr("for", knopka_15_id_for);
+		                                                  // Конец замены
+		
+		$("input[nomer_upr]").attr("name", nomer_upragnen);
+		$("input[upragnen]").attr("name", upragnenie);
+		$("input[ves_snar]").attr("name", ves_snarjad);
+		$("input[podxod]").attr("name", podxod);
+		
+		$(":radio").attr("name", knopka_5_name);
+		</script>
+	
+</div>
+
+	 
+	 
+	 
+	 </div>
+	  <div class="form_done" >
+      <div class="block_center_text"> <h2>Сколько повторений <br> удалось выполнить?</h2></div>
+	 </div>
+	 
+	 
+	 
+	 
+	
+	 
+	  
+	  
+       <script type="text/javascript" src="../../js/cordova.js"></script>
+        <script type="text/javascript" src="../../js/index.js"></script>
+	
+
+        
+    </body>
+</html>

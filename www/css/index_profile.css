@@ -1,0 +1,4015 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    /*background-color:#E9EBEE;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4));
+		*/
+	background-image: url(../img/fon.jpg); 
+    background-attachment:fixed;
+	background-size: cover;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.body_shadow {
+	position:absolute;
+    background-color:#428B99;
+    height:100%;
+	width:100%; 
+
+    	/* Отмена обтекания */
+   }
+.clear {
+    clear: left; /* Отмена обтекания */
+   }
+
+.header {
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:0%;
+    height:4%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+    font-size:110%
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+
+
+
+#foto_profile {
+	
+  position:absolute; 
+  background-image: url(../img/foto2.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+    top:6%;
+	left:15%;
+    height:30%;                  
+    width:70%;                  
+    text-align:center;
+	outline: 0px solid #555;
+	float: left;
+	border-radius: 100px;
+  
+    
+}
+
+#foto_coach {
+	
+  position:absolute; 
+  background-image: url(../img/foto2.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+    top:27%;
+	left:15%;
+    height:20%;                  
+    width:70%;                  
+    text-align:center;
+	outline: 0px solid #555;
+	float: left;
+	border-radius: 100px;
+	border: 0px solid #ffffff;
+	z-index:3;
+  
+    
+}
+
+.contact_me {
+	position:absolute; 
+    top:7%;
+	left:10%;
+    height:20%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	background-image: url(../img/chat/livechat.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	color: #FFF;
+    font-size:16px;	
+	
+	border-radius:10px;
+
+	outline: 0px solid #fff;
+	z-index:2;	  
+}
+
+
+
+
+.foto_profile_form {
+	
+  position:absolute; 
+  background-image: url(../img/logo/foto2.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+    top:6%;
+	left:15%;
+    height:30%;                  
+    width:70%;                  
+    text-align:center;
+	outline: 0px solid #555;
+	float: left;
+	border-radius: 100px;
+  
+    
+}
+
+
+
+
+
+
+
+.status_profile {
+    position:absolute;             /* position in the center of the screen */
+    background-color:;  /*   #6AA7E8     */
+    top:8%;
+	left:42%;
+    height:17%;                   /* text area height */
+    width:56%;                   /* text area width */
+    text-align:left;
+	outline: 1px solid #555;
+    float: left;
+	
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.profile_text {
+    position:relative;             /* position in the center of the screen */
+    background-color:#FFFFFF ;       
+    height:59%;                   /* text area height */
+    width:67%;                   /* text area width */
+    text-align:left;
+	outline: 0px solid #555;
+    float: left;
+	border-radius:10px;
+	border: 1px ridge #90949C;
+	
+	 
+}
+.profile_text_target {
+    position:relative;             /* position in the center of the screen */
+    background-color:;  /*   #6AA7E8     */
+    left:2%;
+	top:7%; 
+	height:50%;                   /* text area height */
+    width:95%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	
+    font-size: 110%;
+    font-weight: bold;
+   
+}
+
+.profile_text_header {
+    position:relative;             /* position in the center of the screen */
+    background-color:;  /*   #6AA7E8     */
+    left:1%;
+	top:10%; 
+	height:35%;                   /* text area height */
+    width:95%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	color: #4267B2;
+    font-size: 100%;
+    font-weight: bold;
+   
+}
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .profile_text_target {
+      font-size: 95%;
+     
+   }
+    .profile_text_header {
+      font-size: 85%;
+     
+   }
+  
+}
+
+
+
+
+
+.profile_text_level {
+    position:relative;             /* position in the center of the screen */
+    background-color:;  /*   #6AA7E8     */
+    height:59%;                   /* text area height */
+    width:29%;                   /* text area width */
+    text-align:left;
+	outline: 0px solid #555;
+    float: left;
+	top:0%;
+    margin-left:3%;
+	 
+	
+	 
+}
+
+.profile_text_level_text {
+    position:relative;             /* position in the center of the screen */
+    background-color:#6AA7E8;
+    height:35%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 1px solid #555;
+	font-weight: bold;
+	font-size: 150%;
+	margin-top: 0%
+	
+	 
+}
+
+
+
+
+.profile_text_level_number {
+    position:relative;             /* position in the center of the screen */
+    background-color:#6AA7E8;
+    height:63%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 1px solid #555;
+	font-weight: bold;
+	font-size: 200%;
+	
+	 
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .profile_text_level_text {
+      font-size: 120%;
+     
+   }
+    .profile_text_level_number {
+      font-size: 180%;
+     
+   }
+  
+}
+
+
+
+.profile_percent_polosa {
+    position:absolute;             /* position in the center of the screen */
+    top:10%;
+    height:70%;                   /* text area height */
+    width:20%;
+    left:45%;	/* text area width */
+    text-align:left;
+	outline: 0px solid #555;
+	font-weight: bold;
+	font-size: 150%;
+	
+}
+
+
+
+.profile_polosa {
+    position:relative;             /* position in the center of the screen */
+    background-color:;  /*   #6AA7E8     */
+    left:1%;
+	top:12%;
+    height:24%;                   /* text area height */
+    width:97%;                   /* text area width */
+    text-align:left;
+	outline: 0px solid #555;
+    float: left;
+	
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+
+.name_people {
+	position:absolute; 
+    background-image: url(../img/name_fon.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:35%;
+	left:22%;
+    height:7%;                   /* text area height */
+    width:56%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:3;
+	  
+}
+
+.coach_text {
+	position:absolute; 
+    top:48%;
+	left:20%;
+    height:7%;                   /* text area height */
+    width:60%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #000;
+	z-index:5;	  
+}
+
+.coach_name {
+	position:absolute; 
+    top:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #000; 
+    text-transform:none;
+    font-size:16px;	
+	font-family: TAHOMA;
+	font-weight:600;
+}
+.coach_your {
+	position:absolute; 
+    top:50%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #000; 
+    text-transform:none;
+    font-size:12px;	
+	font-family: TAHOMA;
+	font-weight:600;	
+	color:#69726F;
+}
+
+
+.chat_selection_block {
+	position:absolute; 
+    top:37%;
+	left:10%;
+    height:57%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #fff;
+	background-color:#F0F4F5;
+	border-radius:10px;
+
+	  
+}
+
+.chat_selection_icon {
+	position:absolute; 
+    top:35%;
+	left:10%;
+    height:58%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #000;
+	background-color:#F0F4F5;
+	border-radius:10px;
+
+	  
+}
+.whatsapp_block {
+	position:absolute; 
+    top:4%;
+	left:4%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+	background-image: url(../img/chat/whatsapp.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.whatsapp_block:active {
+	position:absolute; 
+    top:4%;
+	left:4%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+	background-image: url(../img/chat/whatsapp_active.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.telegram_block {
+	position:absolute; 
+    top:4%;
+	left:53%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+    background-image: url(../img/chat/telegram.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.telegram_block:active {
+	position:absolute; 
+    top:4%;
+	left:53%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+    background-image: url(../img/chat/telegram_active.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.viber_block {
+	position:absolute; 
+    top:51%;
+	left:4%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+	background-image: url(../img/chat/viber.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.viber_block:active {
+	position:absolute; 
+    top:51%;
+	left:4%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+	background-image: url(../img/chat/viber_active.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.facebook_messenger_block {
+	position:absolute; 
+    top:51%;
+	left:53%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+    background-image: url(../img/chat/facebook_messenge.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.facebook_messenger_block:active  {
+	position:absolute; 
+    top:51%;
+	left:53%;
+    height:42%;                   /* text area height */
+    width:44%;                   /* text area width */
+    text-align:center;
+    background-image: url(../img/chat/facebook_messenge_active.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #000;
+	  
+}
+.chat_title {
+	position:absolute; 
+    top:85%;
+	left:0%;
+    height:15%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	text-transform:none;
+    font-size:12px;	
+	font-family: TAHOMA;
+	outline: 0px solid #000;
+	  
+}
+
+
+
+
+
+.name_people p {
+    font-family: TAHOMA; 
+    font-style: normal;
+	text-transform: capitalize;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 130%;
+	letter-spacing: 2px;
+}
+
+#stars_people {
+   position:absolute; 
+    background-image: url(../img/stars_fon_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;   /* position in the center of the screen */
+    top:41%;
+	left:30%;
+    height:4%;                   /* text area height */
+    width:40%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+
+#stars_people_form {
+   position:absolute; 
+    background-image: url(../img/stars_fon_0.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;   /* position in the center of the screen */
+    top:41%;
+	left:30%;
+    height:4%;                   /* text area height */
+    width:40%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+
+.prised_profile {
+   position:absolute; 
+   align-items: center;    
+    display: flex;
+	background-color:#FAFAFA; 
+    opacity: 0.95;	/*  */
+    top:46%;
+	left:2%;
+    height:6%;                   /* text area height */
+    width:96%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	border-radius: 10px;
+	border: 1px ridge #90949C;
+	  
+}
+.p_text {
+   position:absolute;             /* position in the center of the screen */
+    background-color:transparent;
+    top:0%;
+	left:2%;
+    height:100%;                   /* text area height */
+    width:26%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+.p_polosa {
+   position:absolute;             /* position in the center of the screen */
+    background-color:transparent;
+   
+	left:28%;
+    height:100%;                   /* text area height */
+    width:55%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+#prised {
+   position:absolute;             /* position in the center of the screen */
+   
+    top:20%;
+	left:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+#tjaga {
+   position:absolute;             /* position in the center of the screen */
+   
+    top:20%;
+	left:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+#zhim_lezha {
+   position:absolute;             /* position in the center of the screen */
+   
+    top:20%;
+	left:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+#objom_bitseps {
+   position:absolute;             /* position in the center of the screen */
+   
+    top:20%;
+	left:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+#ves_tela {
+   position:absolute;             /* position in the center of the screen */
+   
+    top:20%;
+	left:0%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+.p_ves {
+   position:absolute;             /* position in the center of the screen */
+    background-color:transparent;
+    top:0%;
+	left:85%;
+    height:100%;                   /* text area height */
+    width:14%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	  
+}
+
+	  
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   .p_ves h2 {
+      font-size: 90%;
+     
+   }
+    .p_text h4 {
+      font-size: 85%;
+     
+   }
+  
+}
+
+.tjaga_profile {
+	align-items: center;    
+    display: flex;
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:54%;
+	left:2%;
+    height:6%;                   /* text area height */
+    width:96%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	border-radius: 10px;
+	border: 1px ridge #90949C;
+}
+.ves_tela_profile {
+	align-items: center;    
+    display: flex;
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:62%;
+	left:2%;
+    height:6%;                   /* text area height */
+    width:96%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	border-radius: 10px; 
+	border: 1px ridge #90949C;
+}
+.objom_talii_profile {
+	align-items: center;    
+    display: flex;
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:70%;
+	left:2%;
+    height:6%;                   /* text area height */
+    width:96%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	border-radius: 10px;
+	border: 1px ridge #90949C;
+}
+.objom_beder_profile {
+	align-items: center;    
+    display: flex;
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:78%;
+	left:2%;
+    height:6%;                   /* text area height */
+    width:96%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	border-radius: 10px; 
+	border: 1px ridge #90949C;
+
+}
+.vopros_treneru {
+    position:absolute;             /* #54D45F position in the center of the screen */
+    background-color:;
+    top:87%;
+	left:2%;
+    height:12%;                   /* text area height */
+    width:30%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #00FF00;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.vopros_treneru_button {
+    position:absolute;             /* position in the center of the screen */
+  
+	background-image: url(../img/chat.png); 
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    
+	left:2%;
+	bottom:7%;
+    height:80%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.vopros_treneru_button:active {
+    position:absolute;             /* position in the center of the screen */
+  
+	background-image: url(../img/chat_active.png); 
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    
+	left:2%;
+	bottom:7%;
+    height:80%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+
+	
+}
+
+
+
+.start_trening {
+    position:absolute;             /* position in the center of the screen */
+    /*background-color:;        #5DB4CF 
+	background-image: url(../img/timer.png); 
+    background-repeat: no-repeat;
+    background-position: center; */
+    top:85.5%;
+	left:29%;
+    height:13.5%;                   /* text area height */
+    width:42%;                      /* text area width */
+    text-align:center;
+	outline: 0px solid #FFFF00;
+    border-radius: 10px 10px 0px 0px;
+	z-index: 1;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+.start_timer_img {
+    position:absolute;             /* position in the center of the screen */
+ 
+	background-image: url(../img/timer.png); 
+    background-repeat: no-repeat;
+    background-position: center; 
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0;
+	margin:auto;
+    height:80px;                   /* text area height */
+    width:142px;                      /* text area width */
+    text-align:center;
+	outline: 0px solid #FF55AA;
+    z-index: 1;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+.start_timer_img_form {
+    position:absolute;             /* position in the center of the screen */
+ 
+	background-image: url(../img/timer_form.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0;
+	margin:auto;
+    height:80px;                   /* text area height */
+    width:142px;                      /* text area width */
+    text-align:center;
+	outline: 0px solid #FF55AA;
+    z-index: 1;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+.start_timer {
+    position:absolute;             /* position in the center of the screen */
+    background-color:;       /* #5DB4CF */
+    top:-1px;
+	left:8px;
+    height:70px;                   /* text area height */
+    width:130px;                   /* text area width */
+    text-align:center;
+	 z-index: 2;
+	font-family: TAHOMA; 
+    font-style: normal;
+	text-transform: capitalize;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 170%;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	color:#FFFFFF;
+    outline: 0px solid #D4E8EC;
+	
+}
+#timer_button {
+    position:absolute;             /* position in the center of the screen */
+    background-color:;       /* #5DB4CF */
+    top:1px;
+	left:-8px;
+    height:80px;                   /* text area height */
+    width:142px;                   /* text area width */
+    text-align:center;
+
+}
+
+
+
+.vvod_dannix {
+    position:absolute;             /* position in the center of the screen */
+    background-color:;       /* #5DB4CF */
+    top:87%;
+	left:69%;
+    height:12%;                   /* text area height */
+    width:30%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #00FF00;
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+.vvod_dannix_button {
+    position:absolute;             /* position in the center of the screen */
+  
+	background-image: url(../img/timer_but.gif); 
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    
+	right:2%;
+	bottom:7%;
+    height:80%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:2;
+   
+}
+.info_button {
+    position:absolute;             /* position in the center of the screen */
+  
+	background-image: url(../img/info.png); 
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    
+	right:2%;
+	bottom:7%;
+    height:80%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:1;
+   
+}
+
+.info_button:active {
+    position:absolute;             /* position in the center of the screen */
+  
+	background-image: url(../img/info_active.png); 
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    
+	right:2%;
+	bottom:7%;
+    height:80%;                   /* text area height */
+    width:80%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:1;
+
+	
+}
+
+
+
+
+.muscul_target_img{
+    position:absolute; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	
+    top:12.5%;
+    height:66%;                   /* text area height */
+    width:98%;
+    left:1%;	/* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	background-color:#FAFAFA; 
+	background-image: url(../img/muscul_img_podlogka.png);   
+	border-radius: 10px 10px 10px 10px;
+	/*display: flex;
+	align-items: center;*/
+	
+}
+
+#muscul_img_0{
+    position:absolute; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	/* position in the center of the screen */
+    height:auto;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	z-index:1;
+	
+}
+
+#muscul_img_1{
+    position:absolute; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	/* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:2;
+	
+}
+#muscul_img_2{
+    position:absolute;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	/* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:3;
+	
+}
+#muscul_img_3{
+    position:absolute; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	/* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:4;
+	
+}
+
+#muscul_img_4{
+    position:absolute;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	/* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	z-index:5;
+	
+}
+
+.muscul_block_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:0%;
+	right:0%;
+	margin:auto;
+    height:100%;                   /* text area height */
+    width:100%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 130%; /* text area width */
+	font-weight: 600;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px ridge #90949C;
+	letter-spacing: 2px;
+	
+	
+  	
+}
+.block_center_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);
+  	
+}
+.block_center_text_overflow {
+    position:absolute;             /* position in the center of the screen */
+    top: 57%;
+    left: 50%;
+	width:100%;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);
+  	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.muscul_target {
+    position:absolute;             /* position in the center of the screen */
+    top:5.5%;
+    height:5%;  
+    left:12.5%;	/* text area height */
+    width:75%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	 
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.muscul_target_upr {
+    position:absolute;             /* position in the center of the screen */
+    top:15%;
+    height:3%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 1px solid #FF0000;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 150%;
+	font-weight: bold;
+	 
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.muscul_target p {
+    font-size: 150%;
+}
+
+.muscul_target_upr p {
+	
+    font-size: 150%;
+	font-weight: bold;
+	
+	
+	
+}
+
+
+.muscul_target_muscul_text {
+    position:absolute;             /* position in the center of the screen */
+    top:80.5%;
+    height:18%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	z-index:4;
+	
+
+	
+}
+.muscul_target_muscul_text p {
+    padding-top:0%;
+	
+
+	
+}
+
+.mtmt_1 {
+	
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:23%;                   /* text area height */
+    width:98%; 
+    left:1%;	
+    text-align:center;
+	outline: 0px solid #555;
+	background-color:rgba(250, 250, 250, 0.9); 
+	border: 1px ridge #90949C;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+.mtmt_2 {
+    position:absolute;             /* position in the center of the screen */
+    top:25%;
+    height:23%;                   /* text area height */
+    width:98%; 
+    left:1%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	background-color:rgba(250, 250, 250, 0.9); 
+	border: 1px ridge #90949C;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.mtmt_3 {
+    position:absolute;             /* position in the center of the screen */
+    top:50%;
+    height:23%;                   /* text area height */
+    width:98%; 
+    left:1%;                  /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	background-color:rgba(250, 250, 250, 0.9); 
+	border: 1px ridge #90949C;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.mtmt_4 {
+    position:absolute;             /* position in the center of the screen */
+    top:75%;
+    height:23%;                   /* text area height */
+    width:98%; 
+    left:1%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #555;
+	background-color:rgba(250, 250, 250, 0.9); 
+	border: 1px ridge #90949C;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.mtmt_text {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:25%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #0055FF;
+	
+	
+}
+.mtmt_text p {
+     
+	font-size: 100%;
+	 	
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .mtmt_text p{
+   
+	font-size: 80%;
+	
+}  
+   .mtmt_text {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:22%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #0055FF;
+	
+	
+}
+   
+   
+   
+   
+}
+
+.mtmt_range {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:25%;
+    height:100%;                   /* text area height */
+    width:46%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #AA7FFF;
+			
+}
+
+.mtmt_range p {
+    
+	font-size: 100%;
+	font-weight: bold;
+		
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .mtmt_range p{
+   
+	 
+	font-size: 95%;
+	font-weight: bold;
+	
+}  
+   .mtmt_range {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:22%;
+    height:100%;                   /* text area height */
+    width:48%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #AA7FFF;
+			
+}
+}
+
+
+.mtmt_proc {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:69%;
+    height:100%;                   /* text area height */
+    width:29%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FFFF55;
+	
+}
+
+.mtmt_proc p {
+  font-size: 100%;
+	
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+    .mtmt_proc p{
+   
+	font-size: 80%;
+	
+}  
+   .mtmt_proc {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:71%;
+    height:100%;                   /* text area height */
+    width:29%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FFFF55;
+	
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app {
+    /*background:url(../img/dor.gif) no-repeat center top; /* px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:300px;                   /* text area height */
+    width:300px;                   /* text area width */
+    text-align:center;
+	padding:0% 0% 0% 0%;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-55% 0px 0px -42%;
+      /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin-top:5%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+h2 {
+    font-size:14px;
+    
+    
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+#ugol { 
+	float: left;
+    
+    
+}
+#speed { 
+	float:  right;
+    
+    
+}
+#timer { 
+	font-size:24px;
+    font-weight:normal;
+    
+    
+}
+
+.body_authorization {
+    background-color:#428B99; 
+    position:absolute;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%; 
+	
+}
+.body_manual {
+     background-color:#428B99;
+    background-image:linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-webkit-linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-ms-linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #F1F4F5),
+        color-stop(0.51, #428B99)
+    );
+    background-attachment:fixed;
+    position:absolute;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%; 
+	text-transform:none;
+	
+}
+
+#iphone_manual_person_pr {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_person_pr.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+#iphone_manual_muscul_target {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_muscul_target.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+#iphone_manual_plan_trenirovki {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_plan_trenirovki.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+#iphone_manual_upragmenie {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_upragnenie_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+#iphone_manual_upr_result {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_upragnenie_1_rezult.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+#iphone_manual_tren_end {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_tren_end.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+
+
+
+#progress_bar_manual_0 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+
+
+	outline: 0px solid #555;
+	
+}
+
+#progress_bar_manual {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_2 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_2.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_3 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_3.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_4 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_4.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_5 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_5.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+.info_manual {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:15%;                   /* text area height */
+    width:90%; 
+	left:5%;
+	top:80.5%;
+	background-color:#F1F3F4;
+    border-radius: 10px 10px 10px 10px;
+     border: 2px ridge #90949C;
+    outline: 0px solid #555;
+	
+	
+}
+
+.info_manual_text {
+   overflow: auto;
+    position:absolute;             /* position in the center of the screen */
+    height:96%;                   /* text area height */
+    width:96%; 
+	left:2%;
+	top:2%;
+
+    border-radius: 10px 10px 10px 10px;
+     border: 0px ridge #90949C;
+    outline: 0px solid #555;
+	text-align: center;
+	
+}
+
+
+#logo_text { 
+	position:absolute; 
+    height:35%;                   /* text area height */
+    width:80%;
+    background-image: url(../img/logo/logo-smart_ft_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:5%;
+	left:10%;
+	outline: 0px solid #555;
+    }
+#logo_text_2 { 
+	position:absolute; 
+    height:32%;                   /* text area height */
+    width:56%;
+    background-image: url(../img/logo/logo-smart_ft_2.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:4%;
+	left:22%;
+	outline: 0px solid #555;
+    }	
+	
+.input_block {
+
+    position:absolute;  
+	
+    height:50%;                   
+    width:80%;  
+	top:40%;
+	left:10%;
+	outline: 0px solid #555;
+	}
+	
+	.input_block_2 {
+
+    position:absolute;             /* position in the center of the screen */
+    height:50%;                   /* text area height */
+    width:90%;  
+	top:41.5%;
+	left:5%;
+	outline: 0px solid #555;
+	}
+
+@media screen and (min-width: 750px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.input_block {
+
+    position:absolute;             /* position in the center of the screen */
+    height:50%;                   /* text area height */
+    width:40%;  
+	top:40%;
+	left:30%;
+	outline: 0px solid #555;
+	} 
+
+.input_block_2 {
+
+    position:absolute;             /* position in the center of the screen */
+    height:50%;                   /* text area height */
+    width:46%;  
+	top:41.5%;
+	left:28%;
+	outline: 0px solid #555;
+	}
+	
+#logo_text { 
+	position:absolute; 
+    height:30%;                   /* text area height */
+    width:40%;
+    background-image: ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:8%;
+	left:30%;
+	outline: 0px solid #555;
+    }	
+    
+   #logo_text_2 { 
+	position:absolute; 
+    height:30%;                   /* text area height */
+    width:38%;
+    background-image: ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:6%;
+	left:32%;
+	outline: 0px solid #555;
+    }	
+}	
+	
+	
+	
+	
+	
+	
+	
+.name_text {
+    position:absolute;             /* position in the center of the screen */
+    height:16px;                   /* text area height */
+    width:100%;  
+	top:0%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color:#356F7B;
+	text-align: left;
+	font-size:14px;
+	}
+.name_input {
+    height:26px; 
+    position:absolute;             /* position in the center of the screen */                  /* text area height */
+    width:100%;  
+	top:7%;
+	border: 4px ridge;
+	border-width: 0px 0px 2px 0px;
+	border-color: #356F7B;
+	z-index:9998;
+	color:#008C9B;
+	outline: 0px solid #555;
+	
+	
+	}
+	
+	
+.email_text_2 {
+    position:absolute;             /* position in the center of the screen */
+    height:16px;                   /* text area height */
+    width:100%;  
+	top:23%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color:#356F7B;
+	text-align: left;
+	font-size:14px;
+	}
+.email_input_2 {
+
+    position:absolute;             /* position in the center of the screen */
+    height:26px; 
+    outline: 0px solid #555;	/* text area height */
+    width:100%;  
+	top:31%;
+	border: 4px ridge;
+	border-width: 0px 0px 2px 0px;
+	border-color: #356F7B;
+	z-index:9998;
+	
+	}	
+	
+.messenger {
+    position:absolute;             /* position in the center of the screen */
+    height:16px;                   /* text area height */
+    width:100%;  
+	top:47.5%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color:#356F7B;
+	text-align: left;
+	font-size:14px;
+	}
+.messenger_input {
+
+    position:absolute;             /* position in the center of the screen */
+    height:26px;                   /* text area height */
+    width:100%;  
+	top:55%;
+	border: 4px ridge;
+	border-width: 0px 0px 2px 0px;
+	border-color: #356F7B;
+	z-index:9998;
+	outline: 0px solid #555;
+	
+	}	
+	
+
+
+	
+	
+	
+.email_text {
+
+    position:absolute;             /* position in the center of the screen */
+    height:16px;                   /* text area height */
+    width:100%;  
+	top:0%;
+	outline: 0px solid #FF00AE;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #ffffff  ;
+	} 	
+	
+.email_input {
+
+    position:absolute;             /* position in the center of the screen */
+    height:26px;                   /* text area height */
+    width:100%;  
+	top:6%;
+	border: 4px ridge;
+	border-width: 0px 0px 2px 0px;
+	border-color: #ffffff  ;
+	z-index:9997;
+	outline: 0px solid #FF00AE;
+	
+	} 	
+
+.password_text {
+
+    position:absolute;             /* position in the center of the screen */
+   height:16px;                   /* text area height */
+    width:100%;  
+	top:20%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #ffffff ;
+	outline: 0px solid #FF00AE;
+	} 	
+.password_input {
+
+    position:absolute;             /* position in the center of the screen */
+    height:26px;                   /* text area height */
+    width:100%;  
+	top:26%;
+	border: 4px ridge;
+	border-width: 0px 0px 2px 0px;
+	border-color: #ffffff  ;
+	z-index:9997;
+	outline: 0px solid #FF00AE;
+	
+	}
+
+.login_button {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:100%;  
+	top:45%;
+	outline: 0px solid #555;
+    border: 4px ridge;
+	border-width: 2px 2px 2px 2px;
+	border-color: #ffffff  ;
+	border-radius: 5px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	color: #ffffff ;
+	z-index:9997;
+	} 
+
+.registration_button {
+    position:absolute;             /* position in the center of the screen */
+    height:11%;                   /* text area height */
+    width:90%;  
+	top:77%;
+	left:4%;
+	outline: 0px solid #555;
+    border: 1px ridge;
+	border-width: 1px 1px 1px 1px;
+	border-color: #356F7B  ;
+	border-radius: 5px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	color:#1976d3;
+	} 
+.сreate_account {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:100%;  
+	top:60%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	text-align:center;
+	font-size:16px;
+	color: #ffffff ;
+	} 
+.сreate_account_confirm {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:100%;  
+	top:60%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	text-align:center;
+	font-size:16px;
+	color: #ffffff ;
+	opacity: 0.0;
+	} 
+.demo_in_index {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:100%;  
+	top:108%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	text-align:center;
+	font-size:16px;
+	color: #ffffff ;
+	opacity: 0.5;
+	outline: 0px solid #555;
+	z-index: 9998;
+	} 
+.privacy_policy {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:100%;  
+	top:125%;
+	outline: 0px solid #555;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	text-align:center;
+	font-size:14px;
+	color: #E4E4E4 ;
+	z-index: 9998;
+	}	
+	
+	
+		@media screen and (max-height: 580px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ .email_text {
+ 
+	top:-10%;
+	outline: 0px solid #FF00AE;
+
+	} 	
+	
+.email_input {
+
+    height:24px;
+	top:-1%;
+
+	outline: 0px solid #FF00AE;
+	
+	} 	
+
+.password_text {
+
+ 
+	top:17%;
+
+	outline: 0px solid #FF00AE;
+	} 	
+.password_input {
+ 
+	top:26%;
+height:24px;
+	outline: 0px solid #FF00AE;
+	
+	}
+
+.login_button {
+ 
+	top:48%;
+	outline: 0px solid #555;
+	height:30px;
+
+	} 
+ 
+.сreate_account {
+
+	top:73%;
+	outline: 0px solid #555;
+	
+
+	} 
+	
+.сreate_account_confirm {
+
+	top:73%;
+	outline: 0px solid #555;
+	
+
+	} 	
+  .name_text {
+ 
+	top:-8%;
+	outline: 0px solid #555;
+
+	}
+.name_input {
+ 
+	top:2%;
+height:24px;
+	outline: 0px solid #555;
+	
+	
+	}
+	
+	
+.email_text_2 {
+ 
+	top:21%;
+	outline: 0px solid #555;
+
+	}
+.email_input_2 {
+
+
+    outline: 0px solid #555;	/* text area height */
+ height:24px;
+	top:31%;
+
+	
+	}	
+	
+.messenger {
+  
+	top:49.5%;
+	outline: 0px solid #555;
+
+	}
+.messenger_input {
+
+ 
+	top:59%;
+height:24px;
+	outline: 0px solid #555;
+	
+	}
+	
+	.registration_button {
+            /* position in the center of the screen */
+    height:28px;                  /* text area height */
+  
+	top:85%;
+
+	outline: 0px solid #555;
+ 
+	} 
+	
+	
+}
+	
+	
+	
+	
+	@media screen and (max-height: 450px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ .email_text {
+ 
+	top:-10%;
+	outline: 0px solid #FF00AE;
+
+	} 	
+	
+.email_input {
+
+    height:24px;
+	top:-1%;
+
+	outline: 0px solid #FF00AE;
+	
+	} 	
+
+.password_text {
+
+ 
+	top:17%;
+
+	outline: 0px solid #FF00AE;
+	} 	
+.password_input {
+ 
+	top:26%;
+height:24px;
+	outline: 0px solid #FF00AE;
+	
+	}
+
+.login_button {
+ 
+	top:48%;
+	outline: 0px solid #555;
+	height:30px;
+
+	} 
+ 
+.сreate_account {
+
+	top:78%;
+	outline: 0px solid #555;
+
+	} 
+  .name_text {
+ 
+	top:-8%;
+	outline: 0px solid #555;
+
+	}
+.name_input {
+ 
+	top:2%;
+height:24px;
+	outline: 0px solid #555;
+	
+	
+	}
+	
+	
+.email_text_2 {
+ 
+	top:21%;
+	outline: 0px solid #555;
+
+	}
+.email_input_2 {
+
+
+    outline: 0px solid #555;	/* text area height */
+ height:24px;
+	top:31%;
+
+	
+	}	
+	
+.messenger {
+  
+	top:49.5%;
+	outline: 0px solid #555;
+
+	}
+.messenger_input {
+
+ 
+	top:59%;
+height:24px;
+	outline: 0px solid #555;
+	
+	}
+	
+	.registration_button {
+            /* position in the center of the screen */
+    height:28px;                  /* text area height */
+  
+	top:87%;
+
+	outline: 0px solid #555;
+ 
+	} 
+	
+	
+}
+
+
+
+
+
+
+
+#authorization_Email { 
+font-family: Arial, Helvetica, sans-serif;
+background-color: transparent;
+border: 0px ridge;
+outline: none;
+font-size:16px;
+color: #ffffff ;
+letter-spacing: 1px;
+text-transform:lowercase;
+font-weight: normal;
+    }	
+    
+#authorization_Password { 
+background-color: transparent;
+border: 0px ridge;
+outline: none;
+font-size:18px;
+letter-spacing: 5px;
+color: #ffffff ;
+    }	
+
+
+#registration_name { 
+font-family: Arial, Helvetica, sans-serif;
+background-color: transparent;
+border: 0px ridge;
+left:1px;
+outline: none;
+font-size:16px;
+color: #000000 ;
+letter-spacing: 1px;
+text-transform:none;
+font-weight: normal;
+
+
+    }
+
+
+#registration_name::placeholder { 
+opacity: 0.7;
+font-size:14px;
+  
+
+ }
+
+
+
+
+#registration_Email { 
+font-family: Arial, Helvetica, sans-serif;
+background-color: transparent;
+border: 0px ridge;
+left:1px;
+outline: none;
+font-size:16px;
+color: #000000;
+letter-spacing: 1px;
+text-transform:lowercase;
+font-weight: normal;
+
+ }
+ #registration_Email::placeholder { 
+opacity: 0.7;
+font-size:14px
+
+ }	
+#registration_tel { 
+font-family: Arial, Helvetica, sans-serif;
+background-color: transparent;
+border: 0px ridge;
+left:1px;
+outline: none;
+font-size:16px;
+color: #000000;
+letter-spacing: 1px;
+text-transform:lowercase;
+font-weight: normal;
+
+    }	
+ #registration_tel::placeholder { 
+opacity: 0.7;
+font-size:14px
+
+ }
+	
+.chat_top_block {
+    position:absolute;             /* position in the center of the screen */
+    height:15%;                   /* text area height */
+    width:98%;  
+	top:-18%;
+	outline: 0px solid #999;
+
+	} 	
+	
+.chat_avatar {
+    position:absolute;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:25%; 
+    background-image: url(../img/logo/chat_avatar.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;	
+	
+	outline: 0px solid #999;
+
+	} 	
+	
+.avatar_name {
+    position:absolute;             /* position in the center of the screen */
+    height:50%;                   /* text area height */
+    width:72%;  
+	left:28%;
+	font-size:16px;
+	
+	outline: 0px solid #999;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #ffffff  ;
+
+	}	
+.avatar_online {
+    position:absolute;             /* position in the center of the screen */
+    height:50%;                   /* text area height */
+    width:72%;  
+	left:28%;
+	top:50%;
+	font-size:12px;
+	
+	outline: 0px solid #999;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #ffffff  ;
+
+	}	
+.chat_1_message {
+    position:absolute;             /* position in the center of the screen */
+    height:auto;                   /* text area height */
+    width:90%;  
+	left:5%;
+	top:2%;
+	font-size:12px;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #000000 ;
+
+	}	
+	
+.cloud_1 {
+    position:relative; 
+float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:2%;
+	top:2%;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#FFFFFF;
+
+	}
+	
+.cloud_2 {
+    position:relative; 
+    float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:2%;
+    margin-top: 5px;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#FFFFFF;
+
+	}	
+.cloud_3 {
+    position:relative; 
+    float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:22.2%;
+    margin-top: 5px;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#D4E8EC;
+
+	}	
+
+.cloud_4 {
+    position:relative; 
+    float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:2%;
+    margin-top: 5px;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#FFFFFF;
+
+	}	
+.cloud_5 {
+    position:relative; 
+    float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:2%;
+    margin-top: 5px;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#FFFFFF;
+
+	}	
+.cloud_6 {
+    position:relative; 
+    float:left;	/* position in the center of the screen */
+    min-height:10px;                   /* text area height */
+    width:75%;  
+	left:22.2%;
+    margin-top: 5px;
+	font-size:12px;
+	 border-radius: 10px 10px 10px 10px;
+     border: 1px ridge #90949C;
+	
+	outline: 0px solid #000000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:none;
+	color: #000000 ;
+	background-color:#D4E8EC;
+
+	}	
+	
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.cloud_1 {
+	font-size:10px;
+	}
+.cloud_2 {
+	font-size:10px;
+	}
+.cloud_3 {
+	font-size:10px;
+	}	
+.cloud_4 {
+	font-size:10px;
+	}
+.cloud_5 {
+	font-size:10px;
+	}	
+.cloud_6 {
+	font-size:10px;
+	}	
+}	
+	
+	
+	
+.frame_in_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 padding:3px 0px 3px 4px;
+	}
+	.frame_in_message_submit{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	text-align:center;
+	background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+		
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 overflow: hidden;
+	 
+	 
+	}
+.frame_in_message_manual{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	color:#000000;
+	text-align:center;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 padding:3px 0px 3px 4px;
+	 letter-spacing: 0.5px;
+	}	
+	
+.frame_in_message_manual:active{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+		background-color:#428B99;
+	color:#E4E8E9;
+	text-align:center;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 padding:3px 0px 3px 4px;
+	 letter-spacing: 0.5px;
+	}	
+.frame_in_message_ava{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	border-radius: 5px 5px 5px 5px;
+    border: 1px ridge #90949C;
+    outline: 0px solid #000000;
+	padding:8px 0px 8px 4px;
+	}	
+.name_of_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:100%;  
+	text-align:center;
+	padding-bottom:2px;
+	letter-spacing: 0.3px;
+
+     outline: 0px solid #000000;
+	}
+.name_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:100px;  
+	text-align:center;
+	padding-top:2px;
+    outline: 0px solid #000000;
+	}
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:46%; 
+    height:18px; 
+	margin-left: 5px;
+    outline: 0px solid #000000;
+	
+	}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:18px; 
+	margin-left: 4px;
+    outline: 0px solid #000000;
+	}
+
+	
+}
+@media screen and (min-width: 410px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:47%; 
+    height:18px; 
+	margin-left: 5px;
+    outline: 0px solid #000000;
+	}
+
+	
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:14px; 
+	margin-left: 5px;
+    outline: 0px solid #000000;
+	}
+
+	.name_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:80px;  
+	text-align:center;
+	padding-top:2px;
+    outline: 0px solid #000000;
+	}
+}
+	
+@media screen and (min-width: 750px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:70%; 
+    height:14px; 
+	margin-left: 5px;
+    outline: 0px solid #000000;
+	}
+
+	
+}		
+	
+.entry_in_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:100%; 
+  	
+
+
+     outline: 0px solid #000000;
+	}
+	
+.entry_now{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:50%;  
+    outline: 0px solid #FF4500;
+	}
+.entry_then{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:50%;  
+    outline: 0px solid #008000;
+	}	
+#message_input{
+    position:relative; 
+    width:30px; 
+    height:12px;	
+    outline: 0px solid #008000;
+	font-size:12px;
+	margin-left:3px;
+	padding-left:2px;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	
+	
+	}
+#message_input_then{
+    position:relative; 
+    width:30px; 
+    height:12px;	
+    outline: 0px solid #008000;
+	font-size:12px;
+	margin-left:5px;
+	padding-left:2px;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 
+	
+	}	
+
+
+
+.file_upload_0{
+    position: absolute;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 100%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #000000  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9996;
+
+	
+}
+
+
+.file_upload{
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 100%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #000000  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9997;
+
+	
+}
+
+
+
+
+.file_upload:active {
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 100%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#428B99;
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #E4E8E9  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9997;
+
+	
+}
+
+
+
+.file_upload > button{
+    float: right;
+    width: 8em;            /* example */
+    height: 100%;
+	outline: 1px solid #008000;
+}
+.file_upload > div{
+    padding-left: 0em  ;    /* example */
+}
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+}
+.radio + label {
+  position: relative;
+
+  cursor: pointer;
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 24px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90949C;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 27px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #55BACE;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+.radio:focus + label:before {
+  box-shadow: 0 0 0 3px #FEC762;
+}
+
+
+.radio_2 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+}
+.radio_2 + label {
+  position: relative;
+
+  cursor: pointer;
+}
+.radio_2 + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90949C;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio_2 + label:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #55BACE;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s;
+}
+.radio_2:checked + label:after {
+  opacity: 1;
+}
+.radio_2:focus + label:before {
+  box-shadow: 0 0 0 3px #FEC762;
+}
+
+
+
+	
+	
+.cloud_tail_1 {
+    position:absolute;             /* position in the center of the screen */
+    height:20px;                   /* text area height */
+    width:20px;  
+	left:-10px;
+	bottom:-9px;
+	outline: 0px solid #000000;
+    background-image: url(../img/logo/cloud_tail_1.png) ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	}
+	
+.cloud_tail_3 {
+    position:absolute;             /* position in the center of the screen */
+    height:20px;                   /* text area height */
+    width:20px;  
+	right:-10px;
+	bottom:-9px;
+	outline: 0px solid #000000;
+    background-image: url(../img/logo/cloud_tail_2.png) ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	}
+
+.fake_chat{
+    position:absolute; 
+
+    width:102%; 
+    height:35px;	
+    bottom:-12%;
+    outline: 0px solid #000000;
+	border-radius: 5px 5px 5px 5px;
+    border: 0px ridge #90949C;
+	}
+
+@media screen and (max-height: 450px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.fake_chat{
+
+
+    
+    height:0px;
+    bottom:0%;
+    width:0%	
+
+	}
+
+	
+}	
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.fake_chat{
+
+
+    
+    height:30px;
+    bottom:-10%;	
+
+	}
+
+	
+}	
+
+.fake_chat_block_in{
+    position:absolute; 
+
+    width:80%; 
+    height:99%;	
+    left:0.5%;
+    outline: 0px solid #000000;
+	border-radius: 25px 25px 25px 25px;
+    border: 1px ridge #90949C;
+	background-color:#FFFFFF;
+	overflow: hidden;
+	}
+	
+
+.fake_chat_block_send{
+    position:absolute; 
+    top:-2px;
+    width:39px; 
+    height:39px;	
+    left:85%;
+    outline: 0px solid #000000;
+	border-radius: 50% 50% 50% 50%;
+    border: 0px ridge #90949C;
+	
+	background-color: #F0F4F5;
+    background-image: url(../img/logo/chat_send.png) ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	}	
+	
+	
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.fake_chat_block_send{
+
+    top:0px;
+    width:34px; 
+    height:34px;	
+
+    border: 0px ridge #90949C;
+
+	}
+
+	
+}	
+
+@media screen and (max-height: 450px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.fake_chat_block_send{
+
+
+    
+    height:0px;
+    bottom:0%;
+    width:0%	
+
+	}
+
+	
+}
+
+
+.fake_chat_block_in_smile{
+    position:absolute; 
+    width:14%; 
+    height:98%;	
+    left:0%;
+    outline: 0px solid #000000;
+	border-radius: 25px 0px 0px 25px;
+    border: 0px ridge #C58CE3;
+	background-image: url(../img/logo/smile_chat.png) ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	}
+.fake_chat_block_in_text{
+    position:absolute; 
+    width:48%; 
+    height:99%;	
+    left:17%;
+    outline: 0px solid #20AC13;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #B9C4C7 ;
+	font-size:14px;
+
+	}
+.fake_chat_block_in_foto{
+    position:absolute; 
+    width:35%; 
+    height:98%;	
+    left:65%;
+	border-radius: 0px 25px 25px 0px;
+    border: 0px ridge #B5D0FD;
+    outline: 0px solid #B5D0FD;
+    background-image: url(../img/logo/in_chat.png) ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	}	
+
+
+
+
+	
+#time_1_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:110%;
+	top:40%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+	
+	
+	
+
+	outline: px solid #000000;
+
+
+	}	
+#time_2_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:110%;
+	top:35%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+
+	outline: 0px solid #000000;
+
+
+	}
+#time_3_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:-16%;
+	top:35%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+
+	outline: 0px solid #000000;
+
+
+	}	
+#time_4_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:110%;
+	top:35%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+
+	outline: 0px solid #000000;
+
+
+	}
+#time_5_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:110%;
+	top:35%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+
+	outline: 0px solid #000000;
+
+
+	}
+#time_6_message {
+    position:absolute;             /* position in the center of the screen */
+    height:10%;                   /* text area height */
+    width:40px;  
+	left:-16%;
+	top:35%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:inherit;
+	color: #000000 ;
+	font-size:8px;
+
+	outline: 0px solid #000000;
+
+
+	}	
+	
+	
+	
+	
+
+#message_1{padding:3px 3px 3px 5px;display:none;}
+#message_1 .new{opacity: 0;}
+#message_1 .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
+  
+#message_2{padding:3px 3px 3px 5px;display:none;}
+#message_2 .new{opacity: 0;}
+#message_2 .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
+	
+#message_3{padding:3px 3px 3px 5px;}
+	
+#message_4{padding:3px 3px 3px 5px;display:none;}
+#message_4 .new{opacity: 0;}
+#message_4 .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}	
+	
+#message_5{padding:3px 3px 3px 5px;display:none;}
+#message_5 .new{opacity: 0;}
+#message_5 .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}		
+	
+#message_6{padding:3px 3px 3px 5px;}	
+
+#message_manual{padding:3px 3px 3px 5px;display:none;}
+#message_manual .new{opacity: 0;}
+#message_manual .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
+
+
+.fond {
+	position: absolute;
+	padding-top: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	outline: 0px solid #FF0000
+}
+.mymagicoverbox {
+ display:inline-block;
+ position:absolute;
+ height:6.5%;
+ top:15%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000
+ 
+ 
+ 
+ 
+ 
+}
+.mymagicoverbox_stop {
+ display:inline-block;
+ position:absolute;
+ height:4.5%;
+ top:8.5%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000
+ 
+ 
+ 
+ 
+ 
+}
+
+.mymagicoverbox_сreate_account {
+ display:inline-block;
+ position:absolute;
+ height:5%;
+ top:70%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000;
+ z-index:9997;
+ 
+ 
+}
+
+		@media screen and (max-height: 580px) {    /* Поставь 640, когда на сервер загрузишь */ 
+
+		.mymagicoverbox_сreate_account {
+
+ height:5%;
+ top:76.5%;
+
+ outline: 0px solid #FF0000;
+
+ 
+ 
+}
+}	
+	@media screen and (max-height: 450px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+		.mymagicoverbox_сreate_account {
+
+ height:5%;
+ top:78.8%;
+
+ outline: 0px solid #FF0000;
+
+ 
+ 
+}	
+	
+}
+
+
+
+
+
+
+
+#mymagicoverbox_сreate_account {
+ display:inline-block;
+ position:absolute;
+ height:4.5%;
+ top:70%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000
+ 
+ 
+}
+
+
+
+
+.mymagicoverbox_fenetre {
+ z-index:9998;
+ position:fixed;
+ margin-left:50%;
+ top:14.5%;
+ border-radius: 0px 0px 10px 10px;
+ border: 1px ridge #90949C;
+ text-align:center;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#97BF0D;
+ font-style:normal;
+ font-size:20px;
+ font-weight:300;
+ font-family: Verdana, sans-serif; 
+}
+
+.mymagicoverbox_fenetre_express {
+ left:-45%;
+ width:87%;
+ height:82.9%;
+ top:8%;
+ z-index:9998;
+ position:fixed;
+ margin-left:50%;
+ border-radius: 10px 10px 10px 10px;
+ border: 1px ridge #90949C;
+ text-align:center;
+ display:none;
+ padding:5px;
+	background-image: url(../img/express_fon.jpg); 
+    background-attachment:fixed;
+	background-size: cover;
+ color:#000000;
+ font-style:normal;
+ font-size:20px;
+ font-weight:300;
+ font-family:'Roboto';
+    padding-top:2.5%;
+ 	font-size: 120%; /* text area width */
+	font-weight: 600;
+	font-family: Verdana, sans-serif;  
+	letter-spacing: 2px;
+ 
+ 
+}
+.mymagicoverbox_fenetre_express a {
+ color:#000000;
+ font-style:normal;
+ font-size: 90%;
+ font-weight: 500;
+ font-family:Verdana, sans-serif; 
+ letter-spacing: 1px;
+ text-decoration: none;
+ 
+ 
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.mymagicoverbox_fenetre_express {
+
+ 	font-size: 120%; /* text area width */
+
+}
+
+.mymagicoverbox_fenetre {
+ font-size:16px;
+
+}
+	
+}
+
+
+
+.mymagicoverbox_fenetre_сreate_account {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-45%; 
+ width:86.7%;
+ height:83%;
+ top:5%;
+ border-radius: 10px 10px 10px 10px;
+ border: 1px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ 
+}
+
+
+.mymagicoverbox_fenetre_prof_form {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-44%; 
+ width:86.7%;
+ height:74%;
+ top:14%;
+ border-radius: 10px 10px 10px 10px;
+ border: 2px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ 
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ background-image: url(../img/fon_chat.jpg); 
+ background-attachment:fixed;
+ background-size: cover;
+
+}
+
+#chat_overflow {
+outline: 0px solid #FF0000;
+position:fixed;
+width:86.7%;
+ height:74%;
+ overflow: auto;
+ border: 0px ridge #90949C;
+ border-radius: 10px 10px 10px 10px;
+ 
+}
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.mymagicoverbox_fenetre_prof_form {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-45%; 
+ width:86.7%;
+ height:75%;
+ top:15%;
+ border-radius: 10px 10px 10px 10px;
+ border: 2px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ 
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ 
+}
+
+#chat_overflow {
+outline: 0px solid #FF0000;
+position:fixed;
+width:86.7%;
+ height:75%;
+ overflow: auto;
+ border-radius: 10px 10px 10px 10px;
+ border: 1px ridge #90949C;
+
+}
+	
+}
+
+
+
+
+
+
+
+
+.mymagicoverbox_fenetreinterieur {
+ text-align:center;
+ overflow:auto;
+ padding:10px;
+ background-color:#ffffff;
+ color:#666666;
+	font-size: 76%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif; 
+    letter-spacing:0.3px;
+ border-top:1px solid #e7e7e7;
+ margin-top:10px;
+ 
+}
+
+.mymagicoverbox_fenetreinterieur_express {
+ text-align:center;
+ overflow:auto;
+ height:2%;
+ width:102%;
+
+
+ color:#666666;
+ font-weight:400;
+ font-family:'Roboto';
+ font-size:17px;
+ border-top:3px solid #386B77;
+ margin-top:3.7%;
+ margin-left:-1%;
+ outline: 0px solid #FF0000;
+ 
+}
+
+
+.mymagicoverbox_fenetreinterieur_сreate_account {
+ text-align:center;
+ overflow:auto;
+ padding:10px;
+ background-color:#ffffff;
+ color:#666666;
+ font-weight:400;
+ font-family:'Roboto';
+ font-size:17px;
+ margin-top:10px;
+ 
+}
+
+.mymagicoverbox_fermer {
+ color:#CB2025;
+ cursor:pointer;
+ font-weight:400;
+ font-size:14px;
+ font-style:normal;
+ font-family:'Roboto';
+}
+.mymagicoverbox_fermer_сreate_account {
+ color:#CB2025;
+ cursor:pointer;
+ font-weight:400;
+ font-size:14px;
+ font-style:normal;
+ font-family:'Roboto';
+}
+#myfond_gris {
+ display: none;
+ background-color:#000000;
+ opacity:0.3;
+ width:100%;
+ height:100%;
+ z-index:9998;
+ position:fixed;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+}
+#myfond_gris_сreate_account {
+ display: none;
+ background-color:#000000;
+ opacity:0.2;
+ width:100%;
+ height:100%;
+ z-index:9996;
+ position:fixed;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+}
+
+#myfond_gris_сreate_account_f {
+ display: none;
+ background-color:#000000;
+ opacity:0.8;
+ width:100%;
+ height:100%;
+ z-index:9996;
+ position:fixed;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+}
+.block_yes_no {
+ position:absolute;
+ height:55%;
+ top:125%;
+ left:13%;
+ cursor:pointer;
+ width:80%;
+ outline: 0px solid #FF0000
+}
+.block_yes {
+  background-image: url(../img/upr_end/yes.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+ position:absolute;
+ height:100%;
+ top:0%;
+ left:50%;
+ cursor:pointer;
+ width:45%;
+ outline: 0px solid #FF0000;
+ z-index:9999;
+}
+.block_no {
+  background-image: url(../img/upr_end/no.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+ position:absolute;
+ height:100%;
+ top:0%;
+ left:0%;
+ cursor:pointer;
+ width:45%;
+ z-index:9999;
+ outline: 0px solid #FF0000;
+}
+
+
+
+
+/* Стили Форм   */
+
+.form_choice {
+    position:absolute;             /* position in the center of the screen */
+    top:6%;                       /* text area height 22  */
+    height:70%;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+}
+
+.form_done {
+    position:absolute;             /* position in the center of the screen */
+    top:82%;                       /* text area height 22  */
+    height:10%;                   /* text area height   */
+    width:90%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	letter-spacing: 1px;
+	left:0%;
+	right:0%;
+	margin:auto;
+	border-radius: 10px;
+	border: 1px ridge #90949C;
+	background-color:#FAFAFA;
+	opacity: 0.75;
+	
+}
+.form_done_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	
+    transform: translate(-50%, -50%);
+  	
+}
+.form_done h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 160%;
+	letter-spacing: 1px;
+}
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+.form_done h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 130%;
+	letter-spacing: 1px;
+}
+
+   
+}
+
+.radio_buttons {
+    
+    font: 400% Tahoma;
+	margin-top: -5%;
+}
+
+@media screen and (min-width: 375px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+.radio_buttons {
+    
+    font: 500% Tahoma;
+	
+}
+
+   
+}
+.radio_buttons div {
+	height:10%;                   /* text area height   */
+    width:43%;
+    float: left; 
+	margin-left:5%;
+	margin-top:5%;
+	
+}
+.radio_buttons input {
+    position: absolute;
+    left: -9999px;
+	
+}
+.radio_buttons label {
+	
+    display: block;
+    margin: 1 0 0 0px;
+    padding: 8px 10px;
+    border: 1px solid #BBBBBB;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .12);
+    cursor: pointer;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.radio_buttons input:checked + label {
+    background: white;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .2);
+}  
+	
+	
+#submit_autorization {
+
+
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:16px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	 z-index:9998;
+     font-weight:500;
+
+}
+#submit_data {
+
+
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:16px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	 	background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+		
+	 border-radius: 5px 5px 5px 5px;
+     border: 0px ridge #90949C;
+	
+	  font-weight:500;
+
+}
+
+#submit_data:active {
+
+
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:16px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	 	background-color:#428B99;
+
+	 color: #E4E8E9;
+	 border-radius: 5px 5px 5px 5px;
+     border: 0px ridge #90949C;
+	
+	  font-weight:500;
+
+}
+
+#submit_registry{
+
+color:#FFFFFF;
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:16px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	border-radius: 5px;
+	  font-weight:500;
+  background: #8FB9C1;
+  background-image: -webkit-linear-gradient(top, #8FB9C1, #428B99);
+  background-image: -moz-linear-gradient(top, #8FB9C1, #428B99);
+  background-image: -ms-linear-gradient(top, #8FB9C1, #428B99);
+  background-image: -o-linear-gradient(top, #8FB9C1, #428B99);
+  background-image: linear-gradient(to bottom, #8FB9C1, #428B99);
+
+
+}	
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index: 30;}
+
+#p_prldr_1{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index: 30;}
+
+#p_prldr_3{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index:9999;}
+
+#p_prldr_i{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index: 9999;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(../img/logo/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+
+#p_prldr_1 .svg_anm_1 {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(../img/logo/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+
+#p_prldr_3 .svg_anm_3 {
+position: absolute;
+width: 150px;
+height: 150px;
+background: url(../img/logo/oval.svg) center center no-repeat;
+background-size:150px;    
+margin: -10px 0 0 -75px;
+outline: 0px solid #FF0000;}
+
+#p_prldr_3 .svg_anm_fon {
+position: absolute;
+width: 150px;
+height: 150px;
+background-image: url(../img/logo/oval_fon_ref.png);
+background-size:150px;    
+margin: -10px 0 0 -75px;
+outline: 0px solid #FF0000;
+}
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+    <head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache" />
+     
+        <meta name="format-detection" content="telephone=no">
+		
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="../../css/index_tren.css">
+		<script type="text/javascript" src="js/prilog.js"></script><script type="text/javascript" src="../../js/function.js"></script>
+		<script type="text/javascript" src="../../js/language.js"></script><script type="text/javascript" src="../../js/backgr_mode.js"></script>
+        <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script><title>Десятое упражнение</title>
+		<script type = "text/javascript" >  //  Скрипт невозврата назад
+history.pushState(null, null, location.href);history.back();history.forward();window.onpopstate = function () {history.go(1);};
+
+
+</script>		
+		
+    </head>
+    <body >
+	
+	    
+     <div id="p_prldr_3"> <div class="contpre"><span class="svg_anm_3" ></span><span class="svg_anm_fon" ></span><br><br><br><br><br>no Internet</div></div><script type="text/javascript">$('#p_prldr_3').hide(1);if (typeof poryadkovy_nomer_tren == "undefined") {$('#p_prldr_3').show(1);} </script><div class="header"> 
+	<div class="block_center_text">
+	<p><script type="text/javascript" >
+	     if (upragnenie_9_superset == "Да") {  //  Установи номер предыдущего упражнения
+          document.write("суперсет");         
+        }
+	  else if (upragnenie_9_superset != "Да") {  //  Установи номер предыдущего упражнения
+	   document.write(header_text_upragnenie_10);    //  Установи номер упражнения 
+}
+      </script> </p>
+	  </div></div>
+	 <div class="name_block"> 
+	 <div class="name_block_fon">
+	 <div class="block_center_text"> Отдыхайте активно </div>
+	 
+	   </div> 
+	 </div>
+	 <div class="exercise"> 
+	 <div class="exercise_fon">
+	
+	 <div class="timer">
+	 <div class="timer_fon_relax">
+	 <div class="timer_time">
+	   <div class="block_center_text">
+	     <span id="time"></span> 
+		                     </div>
+						</div>
+	               </div>
+	          </div> 
+	 
+	   </div> 
+	 </div>
+	 <div class="show_exercise_timer"> 
+	  <div class="show_exercise_center">    
+	 
+	  <div class="Canvas">	
+
+<canvas id="myCanvas" ></canvas>
+<script>
+var SizeTimer;  
+ var newline;
+ 
+    
+    var windowWidth = window.screen.width;
+    
+    if (windowWidth <= 320) {
+        SizeTimer = 290; newline = 15; 
+    } else if (windowWidth > 320 && windowWidth <= 900) {
+        SizeTimer = 330; newline = 18;
+    } 
+
+var timesCode = "E3";
+ 
+  var times = 60 * time_upr_10_3p;                          //  Установи номер упражнения переменной
+  var t1 = "" + times + "";
+  var tim = t1+timesCode;
+  var myCanvas = document.getElementById("myCanvas"),
+    context = myCanvas.getContext("2d"),
+    timeLimit = tim,
+    timeStart = (new Date).getTime(),
+    canvasSize = SizeTimer,
+    lineWidth = newline,      
+    drawX = drawY = radius = canvasSize / 2;
+    radius -= lineWidth / 2;
+    myCanvas.width = canvasSize;
+    myCanvas.height = canvasSize;
+
+function go() {
+    context.beginPath();
+    context.lineWidth = lineWidth;
+    context.lineCap = "round";
+    context.strokeStyle = "#2AFF00";
+    var a = ((new Date).getTime() - timeStart) / timeLimit;
+    context.clearRect(0, 0, canvasSize, canvasSize);
+    context.font = '0px "Tahoma"';
+    context.fillText((100 - a*100)|0, radius, drawY);
+    context.arc(drawX, drawY, radius, -Math.PI / 2 + 2 * Math.PI * a, -Math.PI / 2, !1);
+    context.stroke();
+    1 < a && (timeStart = (new Date).getTime());
+    timers = window.setTimeout(go, 50)
+}
+go();
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+		
+	        if (--timer == 1 && upragnenie_9_superset == "Да") {       //  Установи номер предыдущего упражнения
+            timer = duration; 
+			  location.href="../upragnenie_9/upragnenie_9_timer_3.html";             //  Установи номер предыдущего упражнения 2 раза
+        }
+       else if (timer == 1 && podxod_4_10u == "Четвертый подход") {            //  Установи номер упражнения функцию
+            timer = duration;
+			  location.href="upragnenie_10_4.html";                        //  Установи номер упражнения страницу
+        } 
+	else if (timer == 1 && podxod_4_10u != "Четвертый подход"){            //  Установи номер упражнения функцию
+		      timer = duration;
+            location.href="upragnenie_10_end.html";                        //  Установи номер упражнения страницу
+ 
+ }
+    }, 1000);
+}
+
+window.onload = function () {            
+    fun_upragnenie_10_recreation();                                         //  Установи номер упражнения функции
+		
+    var fiveMinutes = 60 * time_upr_10_3p,                             //  Установи номер упражнения переменной
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+	
+};
+
+</script>
+
+
+
+</div>
+
+<div class="timer_gif">
+<div class="show_exercise_obod">
+	 <picture >
+	 
+        <source id="obod" srcset="../../img/obod_2_320.png" media="(max-width: 320px)">
+        <img src="../../img/obod_2.png" >
+        </picture></div>
+		
+	 <div class="show_exercise_gif">
+	                  
+ 
+         <img id="upr_img" src="" >
+        </div>
+
+	</div>
+
+	                           </div>        </div>
+	 
+	
+	 
+	 
+	  
+	  
+       <script type="text/javascript" src="../../cordova.js"></script>
+        <script type="text/javascript" src="../../js/index.js"></script>
+		
+
+
+        
+    </body>
+</html>

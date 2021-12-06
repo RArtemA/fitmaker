@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+    <head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache" />
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../../css/index_profile.css">
+		<script type="text/javascript" src="js/prilog.js"> </script>
+
+        <script type="text/javascript" src="../../js/language.js"></script>
+		<script type="text/javascript" src="../../js/target_profile.js"></script>
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+		
+    history.pushState(null, null, location.href);
+    history.back();
+    history.forward();
+    window.onpopstate = function () {
+        history.go(1);
+    };
+		
+		
+		
+		
+		
+		
+
+
+
+
+		</script>
+		
+
+	
+        <title>Личный профиль</title>
+		<style>
+   input[type='range'] {
+        overflow: hidden;
+        width: 100%;
+        -webkit-appearance: none;
+        background-color: #D4E8EC;
+		border-radius: 10px 10px 10px 10px;
+		
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 22px;
+        -webkit-appearance: none;
+        color: #bb121e;
+        margin-top: -4px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+        width: 1px;
+        -webkit-appearance: none;
+        height: 22px;
+        cursor: ew-resize;
+        background: #434343;
+        box-shadow: -250px 0 0 250px #4D9AAA;
+    }
+	
+	input[data-filetype="image"]::-webkit-slider-thumb {
+        width: 1px;
+        -webkit-appearance: none;
+        height: 25px;
+        cursor: ew-resize;
+        background: #434343;
+        box-shadow: -200px 0 0 200px #FFFF00;
+    }
+
+
+    input[type="range"]::-moz-range-progress {
+        background-color: #39A5DB; 
+    }
+    input[type="range"]::-moz-range-track {  
+        background-color: #9a905d;
+    }
+    input[type="range"]::-ms-fill-lower {
+        background-color: #39A5DB; 
+    }
+    input[type="range"]::-ms-fill-upper {  
+        background-color: #9a905d;	
+    } 
+	@media screen and (max-width: 360px) {    
+  
+     input[type='range']::-webkit-slider-runnable-track {
+        height: 18px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+    
+	input[type='range']::-webkit-slider-runnable-track {
+        height: 18px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+	
+	
+  
+}
+  </style>
+  
+  
+<script type="text/javascript">
+
+
+	//написать условие, что если months = 1, и day_months >=30? то months = month, а day_month = day_months-28; (что то в єтом роде, что бы небыло глюка в конце месяца с добавлением + 2 дней
+var localValue = localStorage.getItem('myKey');
+var day_month;
+var months;
+
+if (poryadkovy_nomer_tren > localValue) {
+    months = month-1;
+	day_month = day_months;
+    
+} 
+ else if ((month == 1 || month == 3 || month == 4 || month == 5 || month == 6 || month == 7 || month == 8 || month == 9 || month == 10 || month == 11 || month == 12) && day_months >=30) {
+   months = month ;
+ day_month = day_months-29;
+  
+}
+ else if (month == 2 && day_months >=28) {
+   months = month ;
+  day_month = day_months-26;
+  
+}
+else {
+    months = month-1;
+	day_month = day_months+2;
+	
+}
+
+
+function timer() {
+
+    var nowDate = new Date();
+    var achiveDate = new Date(year,months,day_month,hour,0,0); //Задаем дату, к которой будет осуществляться обратный отсчет
+    var result = (achiveDate - nowDate)+1000;
+    if (result < 0 && poryadkovy_nomer_tren > localValue) {
+        var elmnt = document.getElementById('timer');
+        elmnt.innerHTML = ' <a id="timer_button" href="muscul_target_demo.html"><img src="../../img/timer_st.gif" width="142" height="80" alt="Старт"></a> '; 
+		$('.vvod_dannix_button').hide();
+        return undefined;
+    }
+	else if (result < 0) {
+        var elmnt = document.getElementById('timer');
+        elmnt.innerHTML = ' <a id="timer_button" href="#"><img src="../../img/timer_wt.gif" width="142" height="80" alt="Ждите"></a> ';
+        $('.vvod_dannix_button').fadeIn()		
+        return undefined;
+    }
+    var seconds = Math.floor((result/1000)%60);
+    var minutes = Math.floor((result/1000/60)%60);
+    var hours = Math.floor((result/1000/60/60)%24);
+    var days = Math.floor(result/1000/60/60/24);
+    if (seconds < 10) seconds = '0' + seconds;
+    if (minutes < 10) minutes = '0' + minutes;
+    if (hours < 10) hours = '0' + hours;
+    var elmnt = document.getElementById('timer');
+    elmnt.innerHTML = ' ' + '0' + days + ' ' + hours + ' ' + minutes;  //  + ':' + seconds
+    setTimeout(timer, 1000);
+}
+ 
+ 
+ 
+  window.onload = function() {
+    timer();
+	target_zv();
+	
+	
+	
+};
+ 
+
+
+</script>
+<link rel="prefetch prerender" href="muscul_target_info.html" />
+<link rel="prefetch prerender" href="chat_selection.html" />
+<link rel="prefetch prerender" href="https://fitmaker.app/rosolov_fitness_app/coach/Artem_Rosolov/foto.png" />
+
+    </head>
+	
+	
+    <body  >
+	
+	
+	  <script type="text/javascript" >
+	   if (localStorage.getItem('index_demo') === 'true') {
+	    
+ }
+  else {
+  document.write("<div id=\"p_prldr_1\"> <div class=\"contpre\"><span class=\"svg_anm_1\"></span><br>Загрузка<br><small>личного профиля<\/small><\/div><\/div>");
+   setTimeout(function() { $('#p_prldr_1').hide(1);}, 1000);
+  }
+	 
+	
+ </script>
+
+<div id="p_prldr_3"> <div class="contpre">
+<span class="svg_anm_3" >  </span>
+<span class="svg_anm_fon" >  </span>
+<br><br><br><br><br>no Internet</div></div>
+  <script type="text/javascript" >
+	$('#p_prldr_3').hide(1);
+   if (typeof poryadkovy_nomer_tren == "undefined") {
+ $('#p_prldr_3').show(1);
+   
+   } 
+ </script>
+	
+	<!-- Автовставкой вставляй выше хедера код затычки при отсутствии интернета (выше). И проверь, есть ли стили окна интернета в подключаемых стилях css на страницах -->    
+     <div class="header"> 
+	<div class="block_center_text">
+	<p><script type="text/javascript" >
+	   document.write("DEMO версия");
+      </script> </p>
+	  </div></div>
+	    <div class="foto_profile_form"> </div>
+	   <script type="text/javascript">
+	   var fp =  document.getElementById("foto_profile");
+       fp.style.cssText="background-image: url(https://fitmaker.app/rosolov_fitness_app/people/" + localStorage.getItem("username") + "/foto.png);"; 
+	 
+
+	 </script>
+	  
+	                           
+
+      <div class="clear"></div>
+	  <div class="name_people"> <div class="name_people_fon_text">
+	  <div class="block_center_text">
+	  <script type="text/javascript">
+				var totalName = localStorage.getItem('name');
+                var firstName = totalName.replace(/ .*/,'');
+                 document.write(firstName);
+                </script>
+	  </div></div>
+	  
+	  
+	 </div>
+	  <div id="stars_people">  
+	  </div> 
+      <div class="prised_profile"> 
+	  
+	    <div class="p_text"><div class="block_center_text"><h4> Приседания:</h4> </div></div>
+		            <div class="p_polosa"> 
+		<form>
+	
+	    <input type="range" value="" id="prised" min="0" max="100" step="1" disabled="true"> 
+	        </form>
+		
+		</div>
+		<div class="p_ves"><div class="block_center_text"> <h2> <script type="text/javascript" >
+	   document.write(prised);
+      </script> кг</h2> </div></div><!-- Добавить переменную -->
+		
+		
+	                                 </div>
+      <div class="tjaga_profile">
+        <div class="p_text"><div class="block_center_text"><h4> Тяга штанги:</h4> </div></div>
+		<div class="p_polosa"> 
+		<form>
+	
+	    <input type="range" value="" id="tjaga" min="0" max="100" step="1" disabled="true"> 
+	        </form>
+		
+		</div>
+		<div class="p_ves"> <div class="block_center_text"><h2><script type="text/javascript" >
+	   document.write(tjaga);
+      </script> кг</h2></div> </div><!-- Добавить переменную -->
+              
+
+			                                </div>
+      <div class="ves_tela_profile"> <!-- Вес тела или жим лежа -->
+	  <div class="p_text"><div class="block_center_text"><h4>
+       <script type="text/javascript">
+	   if (sex == "Женщина") {
+	    document.write("Вес тела:");
+	  
+      
+} 
+else {
+ document.write("Жим лёжа:");
+  
+}
+	   
+	   </script>
+	   </h4> </div></div>
+		<div class="p_polosa"> 
+		<form>
+	
+	    <input type="range" value="" id="zhim_lezha" min="0" max="100" step="1" disabled="true"> 
+	        </form>
+		
+		</div>
+		<div class="p_ves"><div class="block_center_text"> <h2><script type="text/javascript" >
+ if (sex == "Женщина") {
+	 document.write(ves_tela);
+} 
+else {
+ document.write(zhim_lezha);  
+}
+
+      </script> кг</h2></div> </div><!-- Вес тела или жим лежа конец -->
+              
+	                                                   </div>
+      <div class="objom_talii_profile"> <!-- Обьем талии или обьем бицепса -->
+         <div class="p_text"><div class="block_center_text"><h4>
+       <script type="text/javascript">
+	   if (sex == "Женщина") {
+	    document.write("ОБЪЁМ талии:");
+	  
+      
+} 
+else {
+ document.write("ОБЪЁМ бицепса:");
+  
+}
+	   
+	   </script>
+       </h4> </div></div>
+		<div class="p_polosa"> 
+		<form>
+	
+	    <input type="range" value="" id="objom_bitseps" min="0" max="100" step="1" disabled="true"> 
+	        </form>
+		
+		</div>
+		<div class="p_ves"><div class="block_center_text"> <h2><script type="text/javascript" >
+	 if (sex == "Женщина") {
+	 document.write(objom_talii);
+} 
+else {
+ document.write(objom_bitseps);  
+}
+
+      </script> см</h2></div></div><!-- Обьем талии или обьем бицепса конец -->
+
+	                                                           </div>
+      <div class="objom_beder_profile"> <!-- Обьем бедер или вес -->
+         <div class="p_text"><div class="block_center_text"><h4> 
+		       <script type="text/javascript">
+	   if (sex == "Женщина") {
+	    document.write("ОБЪЁМ бедер:");
+	  
+      
+} 
+else {
+ document.write("Вес тела:");
+  
+}
+	   
+	   </script> </h4> </div></div>
+		<div class="p_polosa"> 
+		<form>
+	
+	    <input type="range" value="" id="ves_tela" min="0" max="100" step="1" disabled="true"> 
+	        </form>
+		
+		</div>
+		<div class="p_ves"><div class="block_center_text"> <h2><script type="text/javascript" >
+	 if (sex == "Женщина") {
+	 document.write(objom_beder + " см");
+} 
+else {
+ document.write(ves_tela + " кг");  
+}		
+
+localStorage.setItem('index_demo', true);
+      </script></h2> </div></div><!-- Добавить переменную -->
+
+
+	  </div>
+      <div class="vopros_treneru">
+      <div class="vopros_treneru_button" onClick="location.href='chat_selection_demo.html'">	  </div>
+	  </div>
+      <div class="start_trening">
+	  
+
+<div class="start_timer_img">
+<div class="start_timer"><p id="timer"></p>	  </div>
+
+
+
+	  </div>
+	  
+	  
+	  </div>
+      <div class="vvod_dannix">	
+       <div class="vvod_dannix_button" onClick=""></div> <script type="text/javascript" > $('.vvod_dannix_button').hide();</script>
+	   <div class="info_button" onClick="location.href='muscul_target_info_demo.html'">	  </div>
+
+	  </div>
+	 
+	  
+	  <div id="myElement"></div>
+
+	                                                                       
+	  
+	 
+	  <script type="text/javascript" src="../../js/passing.js"></script>
+      <script type="text/javascript" src="../../js/cordova.js"></script>
+      <script type="text/javascript" src="../../js/index.js"></script>
+
+
+    </body>
+</html>

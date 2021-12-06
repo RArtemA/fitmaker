@@ -1,0 +1,1424 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    /*background-color:#E9EBEE;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );*/
+	background-image: url(../img/fon.jpg); 
+    background-attachment:fixed;
+	background-size: cover;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+	min-width:320px;
+}
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   body {
+      font-size:10px;
+   }
+ 
+   
+}
+/* Portrait layout (default) */
+
+.clear {
+    clear: left; /* Отмена обтекания */
+   }
+
+.header {
+    position:absolute;             /* position in the center of the screen */
+    background-color:#FAFAFA;
+	opacity: 0.95;
+    top:0%;
+    height:4%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+    font-size:110%
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+
+.razminka_end_img {
+    position:absolute;             /* position in the center of the screen */
+    top:15%;
+    height:50%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	  
+}
+.razminka_end_text {
+    position:absolute;             /* position in the center of the screen */
+    top:70%;
+    height:25%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	  
+}
+
+.razminka_end_text h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 160%;
+	letter-spacing: 1px;
+}
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+.razminka_end_text h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 130%;
+	letter-spacing: 1px;
+}
+
+   
+}
+
+	  
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   .p_ves h2 {
+      font-size: 90%;
+     
+   }
+    .p_text h4 {
+      font-size: 85%;
+     
+   }
+   
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .muscul_target_img{
+   
+	/* background-image: url(../img/foto_muscul_2.png); */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+	
+}  
+   
+}
+
+
+.muscul_target {
+    position:absolute;             /* position in the center of the screen */
+    top:6%;
+    height:8%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	 
+	/*padding:0% 0% 0% 0%;      image height is 200px (bottom 20px are overlapped with text) */
+    /* margin:-55% 0px 0px -42%;*/   
+}
+.name_block {
+    position:absolute;             /* position in the center of the screen */
+    top:6%;
+    height:7%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+ 
+}
+.name_block_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:30%;
+	left:0%;
+	right:0%;
+	margin:auto;
+    height:70%;                   /* text area height */
+    width:90%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 130%; /* text area width */
+	font-weight: 600;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 10px 10px 0px 0px;
+	border: 1px ridge #90949C;
+	letter-spacing: 2px;
+	
+	
+  	
+}
+.name_block_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	
+    transform: translate(-50%, -50%);
+  	
+}
+
+.exercise {
+    position:absolute;             /* position in the center of the screen */
+    top:12%;
+    height:9%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 120%;
+	font-weight: 600;
+	font-family: Arial, sans-serif;
+	  
+}
+.exercise_anons {
+    position:absolute;             /* position in the center of the screen */
+    top:12%;
+    height:81%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 120%;
+	font-weight: 600;
+	font-family: Arial, sans-serif;
+	  
+}
+
+
+.exercise_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:30%;
+	left:0%;
+	right:0%;
+	margin:auto;
+    height:80%;                   /* text area height */
+    width:90%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 110%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 0px 0px 10px 10px;
+	border: 1px ridge #90949C;
+  	
+}
+
+.exercise_fon_anons {
+    position:absolute;             /* position in the center of the screen */
+    top:3.6%;
+	left:0%;
+	right:0%;
+	margin:auto;
+    height:96.4%;                   /* text area height */
+    width:90%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 92%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.9;
+	border-radius: 0px 0px 10px 10px;
+	border: 1px ridge #90949C;
+	z-index:9998;
+	overflow: auto;
+	letter-spacing:0.5px;
+	
+	
+ 	
+}
+.exercise_fon_anons_Click {
+    position:absolute;             /* position in the center of the screen */
+    top:3.6%;
+	left:0%;
+	right:0%;
+	margin:auto;
+    height:96.4%;                   /* text area height */
+    width:90%;                   
+    
+	outline: 0px solid #FF0000;
+    z-index:9998;
+	overflow: auto
+	
+ 	
+}
+
+.exercise_fon_anons_text {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:5%;
+	right:1.5%;
+	margin:auto;
+    height:100%;                   /* text area height */
+    width:85%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	
+ 	
+}
+.exercise_fon_anons_text_express {
+	font-size: 80%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+    position:absolute;             /* position in the center of the screen */
+    top:7.4%;
+	left:5.5%;
+	right:1.5%;
+	margin:auto;
+    height:92.7%;                   /* text area height */
+    width:90%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	
+	
+	
+ 	
+}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+   .exercise_fon_anons_text_express {
+	font-size: 68%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+    position:absolute;             /* position in the center of the screen */
+    top:7.1%;
+	left:3%;
+	right:1.5%;
+	margin:auto;
+	padding-left:2%;
+    height:93%;                   /* text area height */
+    width:93%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	
+	
+	
+ 	
+} 
+   
+}
+
+
+
+
+
+
+.exercise_info_fon {
+    background-image: url(../img/fon_info_4px.png); 
+    background-position: right; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	right:0%;
+    height:60%;                   /* text area height */
+    width:15%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+ 	
+}
+.training_stop_fon {
+    background-image: url(../img/fon_stop_4px.png); 
+    background-position: right; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	right:0%;
+    height:80%;                   /* text area height */
+    width:15%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+ 	
+}
+.training_express_fon {
+    background-image: url(../img/fon_ex_4px.png); 
+    background-position: right; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	right:0%;
+    height:80%;                   /* text area height */
+    width:15%;                   
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+ 	
+}
+
+
+
+.block_center_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	
+    transform: translate(-50%, -50%);
+  	
+}
+.block_text_anons {
+	text-align: left;
+    position:absolute;     
+    top: 50%;
+    left: 50%;
+	width:280px;
+    padding-top:0px;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);	/* position in the center of the screen */
+    overflow: auto;
+  	
+}
+.block_text_anons_express {
+	text-align: left;
+    position:absolute;     
+    top: 50%;
+    left: 50%;
+	width:280px;
+    padding-top:0px;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);	/* position in the center of the screen */
+    
+  	
+}
+
+
+
+.show_exercise {
+    position:absolute;             /* position in the center of the screen */
+    top:23%;                       /* text area height 22  */
+    height:60%;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	display: flex;
+	align-items: center;
+	outline: 0px solid #FF0000;
+	
+	   
+}
+.show_exercise_center {
+   /* position in the center of the screen */                       /* text area height 22  */
+    height:335px;                   /* text area height   */
+    width:100%;  
+    outline: 0px solid #FF0000;  
+	position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:1;
+	
+}
+.show_exercise_gif {
+    position:absolute; 
+    top:20px;	/* position in the center of the screen */                      /* text area height 22  */
+    height:300px;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #00FF00;
+   z-index:3;
+}
+#show_exercise_gif {
+    position:absolute; 
+    top:20px;	/* position in the center of the screen */                      /* text area height 22  */
+    height:300px;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #00FF00;
+   z-index:3;
+}
+
+.show_exercise_obod {
+	
+    position:absolute;             /* position in the center of the screen */                      /* text area height 22  */
+    height:335px;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	z-index:4;
+   
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   .show_exercise_obod {
+	                           
+    height:290px;                 
+}
+   .show_exercise_gif {
+                                    
+    height:250px;                     
+}
+.show_exercise_center {
+                                      
+    height:290px;                   
+   
+}
+
+
+}
+
+
+
+
+
+.show_exercise_timer {
+    position:absolute;             /* position in the center of the screen */
+    top:23%;                       /* text area height 22  */
+    height:60%;                   /* text area height   */
+    width:100%; 
+    display: flex;
+	align-items: center;	/* text area width */
+    
+	outline: 0px solid #FF0000;
+	
+	   
+}
+
+
+
+
+
+
+ .data_exercise {
+    position:absolute;             /* position in the center of the screen */
+    top:84%;
+    height:9%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	   
+}
+
+ .timer {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:44%;
+    left:28%;	/* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	
+	   
+}
+ .timer_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:100%;	/* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px ridge #90949C;
+	
+	   
+}
+ .timer_fon_relax {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:100%;	/* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 10px 10px 10px 10px;
+	border: 0px ridge #90949C;
+	
+	   
+}
+ .timer_time {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:100%;
+    left: 0%;	/* text area width */
+	text-align:center;
+	outline: 0px solid #FF0000; /* text area width */
+	font-weight: 600;
+	font-family: TAHOMA; 
+    font-style: normal;
+	text-transform: capitalize;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 170%;
+	letter-spacing: 2px; 
+
+	
+	   
+}
+
+
+
+ .timer_work {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:50%;
+    left:25%;	/* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	   
+}
+
+ .timer_work h2 {
+    font-size:0px;
+	
+	   
+}
+
+
+ .data_ex_1 {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:50%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+	   
+}
+ .data_ex_1_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:85%;
+    left: 10%;	/* text area width */
+	text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 110%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 10px 0px 0px 10px;
+	border: 1px ridge #90949C;
+	
+	   
+}
+.data_ex_number {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:70%;                   /* text area height */
+    width:100%;
+    left: 0%;	/* text area width */
+	text-align:center;
+	outline: 0px solid #FF0000; /* text area width */
+	font-weight: 600;
+	font-family: TAHOMA; 
+    font-style: normal;
+	text-transform: capitalize;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 170%;
+	letter-spacing: 2px; 
+
+	
+}
+.data_ex_word {
+    position:absolute;             /* position in the center of the screen */
+    top:70%;
+    height:20%;                   /* text area height */
+    width:100%;
+    left: 0%;	/* text area width */
+	text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 110%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  	   
+}
+
+ .data_ex_2 {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+	left:50%;
+    height:100%;                   /* text area height */
+    width:50%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF5689;
+	
+	   
+}
+ .data_ex_2_fon {
+    position:absolute;             /* position in the center of the screen */
+    top:0%;
+    height:100%;                   /* text area height */
+    width:85%;                   /* text area width */
+	text-align:center;
+	outline: 0px solid #FF0000;
+	font-size: 110%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif;  
+	background-color:#FAFAFA; 
+    opacity: 0.8;
+	border-radius: 0px 10px 10px 0px;
+	border: 1px ridge #90949C;
+	right:10%;
+	
+	   
+}
+
+ .footer {
+    position:absolute;             /* position in the center of the screen */
+    top:80%;
+    height:20%;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF00FF;
+	
+	   
+}
+
+.Canvas { 
+ position:absolute;             	
+    text-align:center;
+	outline: 0px solid #FF0000;
+	width:100%;
+	z-index:1;
+
+    
+}
+
+ .timer_gif {
+    position:absolute;             	
+    text-align:center;
+	outline: 0px solid #FF0000;
+	width:100%;
+	
+	z-index:2;
+	   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app {
+    /*background:url(../img/dor.gif) no-repeat center top; /* px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:300px;                   /* text area height */
+    width:300px;                   /* text area width */
+    text-align:center;
+	padding:0% 0% 0% 0%;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-55% 0px 0px -42%;
+      /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin-top:5%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+h2 {
+    font-size:18px;
+    
+    
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+#ugol { 
+	float: left;
+    
+    
+}
+#speed { 
+	float:  right;
+    
+    
+}
+#timer { 
+	font-size:24px;
+    font-weight:normal;
+    
+    
+}
+#obod { 
+	position:absolute; 
+    
+    
+}
+.anons { 
+display: block;
+margin-top:8px;
+margin-bottom:8px;
+outline: 0px solid #FF0000;
+   
+}
+
+
+
+#raz_img { 
+	height: 100%;
+    
+    
+}
+#upr_img { 
+	height: 100%;
+    
+    
+}
+
+
+
+
+
+.fond {
+	position: absolute;
+	padding-top: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	outline: 0px solid #FF0000
+}
+.mymagicoverbox {
+ display:inline-block;
+ position:absolute;
+ height:6.5%;
+ top:15%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000
+ 
+ 
+ 
+ 
+ 
+}
+.mymagicoverbox_stop {
+ display:inline-block;
+ position:absolute;
+ height:4.5%;
+ top:8.5%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 0px solid #FF0000
+ 
+ 
+ 
+ 
+ 
+}
+
+.mymagicoverbox_сreate_account {
+ display:inline-block;
+ position:absolute;
+ height:4.5%;
+ top:70%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 1px solid #FF0000
+ 
+ 
+}
+
+
+#mymagicoverbox_сreate_account {
+ display:inline-block;
+ position:absolute;
+ height:4.5%;
+ top:70%;
+ left:7%;
+ cursor:pointer;
+                     /* text area height */
+ width:87%;
+
+ font-family: Tahoma, Geneva, sans-serif;
+ font-weight: bold;
+ color: #0F7EAC;
+ outline: 1px solid #FF0000
+ 
+ 
+}
+
+
+
+
+.mymagicoverbox_fenetre {
+ z-index:9998;
+ position:fixed;
+ margin-left:50%;
+ top:14.5%;
+ border-radius: 0px 0px 10px 10px;
+ border: 1px ridge #90949C;
+ text-align:center;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#97BF0D;
+ font-style:normal;
+ font-size:20px;
+ font-weight:300;
+ font-family: Verdana, sans-serif; 
+}
+
+.mymagicoverbox_fenetre_express {
+ left:-45%;
+ width:87%;
+ height:82.9%;
+ top:8%;
+ z-index:9998;
+ position:fixed;
+ margin-left:50%;
+ border-radius: 10px 10px 10px 10px;
+ border: 1px ridge #90949C;
+ text-align:center;
+ display:none;
+ padding:5px;
+	background-image: url(../img/express_fon.jpg); 
+    background-attachment:fixed;
+	background-size: cover;
+ color:#000000;
+ font-style:normal;
+ font-size:20px;
+ font-weight:300;
+ font-family:'Roboto';
+    padding-top:2.5%;
+ 	font-size: 120%; /* text area width */
+	font-weight: 600;
+	font-family: Verdana, sans-serif;  
+	letter-spacing: 2px;
+ 
+ 
+}
+.mymagicoverbox_fenetre_express a {
+ color:#000000;
+ font-style:normal;
+ font-size: 90%;
+ font-weight: 500;
+ font-family:Verdana, sans-serif; 
+ letter-spacing: 1px;
+ text-decoration: none;
+ 
+ 
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.mymagicoverbox_fenetre_express {
+
+ 	font-size: 120%; /* text area width */
+
+}
+
+.mymagicoverbox_fenetre {
+ font-size:16px;
+
+}
+	
+}
+
+
+
+.mymagicoverbox_fenetre_сreate_account {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-45%; 
+ width:86.7%;
+ height:83%;
+ top:5%;
+ border-radius: 10px 10px 10px 10px;
+ border: 1px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ 
+}
+
+
+.mymagicoverbox_fenetre_prof_form {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-45%; 
+ width:86.7%;
+ height:74%;
+ top:14%;
+ border-radius: 10px 10px 10px 10px;
+ border: 2px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ background-image: url(../img/fon_chat.jpg); 
+ background-attachment:fixed;
+ background-size: cover;
+ 
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.mymagicoverbox_fenetre_prof_form {
+ z-index:9997;
+ position:fixed;
+ margin-left:50%;
+ left:-45%; 
+ width:86.7%;
+ height:75%;
+ top:15%;
+ border-radius: 10px 10px 10px 10px;
+ border: 2px ridge #90949C;
+ font-family: Geneva, Arial, Helvetica, sans-serif;
+ text-align:left;
+ display:none;
+ padding:5px;
+ background-color:#ffffff;
+ color:#1976d3;
+ font-style:normal;
+ font-size:16px;
+ 
+}
+
+	
+}
+
+
+
+
+
+
+
+
+.mymagicoverbox_fenetreinterieur {
+ text-align:center;
+ overflow:auto;
+ padding:10px;
+ background-color:#ffffff;
+ color:#666666;
+	font-size: 76%; /* text area width */
+	font-weight: 300;
+	font-family: Verdana, sans-serif; 
+    letter-spacing:0.3px;
+ border-top:1px solid #e7e7e7;
+ margin-top:10px;
+ 
+}
+
+.mymagicoverbox_fenetreinterieur_express {
+ text-align:center;
+ overflow:auto;
+ height:2%;
+ width:102%;
+
+
+ color:#666666;
+ font-weight:400;
+ font-family:'Roboto';
+ font-size:17px;
+ border-top:3px solid #386B77;
+ margin-top:3.7%;
+ margin-left:-1%;
+ outline: 0px solid #FF0000;
+ 
+}
+
+
+.mymagicoverbox_fenetreinterieur_сreate_account {
+ text-align:center;
+ overflow:auto;
+ padding:10px;
+ background-color:#ffffff;
+ color:#666666;
+ font-weight:400;
+ font-family:'Roboto';
+ font-size:17px;
+ margin-top:10px;
+ 
+}
+
+.mymagicoverbox_fermer {
+ color:#CB2025;
+ cursor:pointer;
+ font-weight:400;
+ font-size:14px;
+ font-style:normal;
+ font-family:'Roboto';
+}
+.mymagicoverbox_fermer_сreate_account {
+ color:#CB2025;
+ cursor:pointer;
+ font-weight:400;
+ font-size:14px;
+ font-style:normal;
+ font-family:'Roboto';
+}
+#myfond_gris {
+ display: none;
+ background-color:#000000;
+ opacity:0.3;
+ width:100%;
+ height:100%;
+ z-index:9998;
+ position:fixed;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+}
+#myfond_gris_сreate_account {
+ display: none;
+ background-color:#000000;
+ opacity:0.7;
+ width:100%;
+ height:100%;
+ z-index:9996;
+ position:fixed;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+}
+
+.block_yes_no {
+ position:absolute;
+ height:55%;
+ top:125%;
+ left:13%;
+ cursor:pointer;
+ width:80%;
+ outline: 0px solid #FF0000
+}
+.block_yes {
+  background-image: url(../img/upr_end/yes.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+ position:absolute;
+ height:100%;
+ top:0%;
+ left:50%;
+ cursor:pointer;
+ width:45%;
+ outline: 0px solid #FF0000;
+ z-index:9999;
+}
+.block_no {
+  background-image: url(../img/upr_end/no.png); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+ position:absolute;
+ height:100%;
+ top:0%;
+ left:0%;
+ cursor:pointer;
+ width:45%;
+ z-index:9999;
+ outline: 0px solid #FF0000;
+}
+
+
+
+
+/* Стили Форм   */
+
+.form_choice {
+    position:absolute;             /* position in the center of the screen */
+    top:4%;                       /* text area height 22  */
+    height:77%;                   /* text area height   */
+    width:100%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	
+}
+
+.form_done {
+    position:absolute;             /* position in the center of the screen */
+    top:82%;                       /* text area height 22  */
+    height:10%;                   /* text area height   */
+    width:90%;                   /* text area width */
+    text-align:center;
+	outline: 0px solid #FF0000;
+	letter-spacing: 1px;
+	left:0%;
+	right:0%;
+	margin:auto;
+	border-radius: 10px;
+	border: 1px ridge #90949C;
+	background-color:#FAFAFA;
+	opacity: 0.75;
+	
+}
+.form_done_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	
+    transform: translate(-50%, -50%);
+  	
+}
+.form_done h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 160%;
+	letter-spacing: 1px;
+}
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+.form_done h2 {
+    
+      
+	font-family: Lucida Console; 
+    font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 130%;
+	letter-spacing: 1px;
+}
+
+   
+}
+
+.radio_buttons {
+    
+    font: 400% Tahoma;
+	margin-top: -10%;
+}
+
+@media screen and (min-width: 768px) {    /* Поставь 640, когда на сервер загрузишь */ 
+ 
+.radio_buttons {
+    font: 500% Tahoma;
+    margin-top: -5%;
+	
+}
+
+   
+}
+.radio_buttons div {
+	height:10%;                   /* text area height   */
+    width:43%;
+    float: left; 
+	margin-left:5%;
+	margin-top:5%;
+	
+}
+.radio_buttons input {
+    position: absolute;
+    left: -9999px;
+	
+}
+.radio_buttons label {
+	
+    display: block;
+    margin: 1 0 0 0px;
+    padding: 8px 10px;
+    border: 1px solid #BBBBBB;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .12);
+    cursor: pointer;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.radio_buttons input:checked + label {
+    background: white;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+
+
+
+#p_prldr_3{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index:9999;}
+
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+
+.contpre small{font-size:25px;}
+
+#p_prldr_3 .svg_anm_3 {
+position: absolute;
+width: 150px;
+height: 150px;
+background: url(../img/logo/oval.svg) center center no-repeat;
+background-size:150px;    
+margin: -10px 0 0 -75px;
+outline: 0px solid #FF0000;}
+
+#p_prldr_3 .svg_anm_fon {
+position: absolute;
+width: 150px;
+height: 150px;
+background-image: url(../img/logo/oval_fon_ref.png);
+background-size:150px;    
+margin: -10px 0 0 -75px;
+outline: 0px solid #FF0000;
+}
+
+
+
+ 
+
+

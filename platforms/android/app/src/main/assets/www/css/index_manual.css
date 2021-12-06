@@ -1,0 +1,1019 @@
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+#form_block{
+outline: 0px solid #FF0000;
+position:absolute;
+left:10%;
+width:80%;
+top:36%;
+padding-top:2%;
+padding-bottom:1%;
+ height:auto;
+ overflow: auto;
+ border: 2px ridge #EFEFEF;
+ border-radius: 10px 10px 10px 10px;
+ 
+ 
+}
+
+#logo_text { 
+	position:absolute; 
+    height:35%;                   /* text area height */
+    width:80%;
+    background-image: url(../img/logo/logo-smart_ft_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:5%;
+	left:10%;
+	outline: 0px solid #555;
+    }
+	
+@media screen and (max-height: 680px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+#logo_text { 
+	position:absolute; 
+    height:35%;                   /* text area height */
+    width:80%;
+    background-image: url(../img/logo/logo-smart_ft_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:-2%;
+	left:10%;
+	outline: 0px solid #555;
+    }
+
+#form_block{
+
+top:28%;
+
+}
+	
+}	
+
+@media screen and (max-height: 610px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+#logo_text { 
+ display:none;
+    }
+
+#form_block{
+
+top:15%;
+
+}
+	
+}		
+	
+	
+	
+	
+	
+	
+
+.body_manual {
+     background-color:#428B99;
+    background-image:linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-webkit-linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-ms-linear-gradient(top, #F1F4F5 0%, #428B99 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #F1F4F5),
+        color-stop(0.51, #428B99)
+    );
+    background-attachment:fixed;
+    position:absolute;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%; 
+	text-transform:none;
+	
+}
+
+.body_manual_f {
+     background-color:#428B99;
+     background-attachment:fixed;
+    position:absolute;             /* position in the center of the screen */
+    height:100%;                   /* text area height */
+    width:100%; 
+	text-transform:none;
+	color: ; /* Цвет текста */
+	
+}
+
+.frame_in_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:94%;	
+	left:3%;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #C7D5D7;
+     outline: 0px solid #000000;
+	 padding:0% 0% 2% 0%;
+	}
+	.frame_in_message_submit{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:94%;  
+	left:3%;
+    margin-top: 1%;
+	margin-bottom: 4px;
+	text-align:center;
+	background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+		
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 overflow: hidden;
+	 
+	 
+	}
+.frame_in_message_manual{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	color:#000000;
+	text-align:center;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 padding:3px 0px 3px 4px;
+	 letter-spacing: 0.5px;
+	}	
+	
+.frame_in_message_manual:active{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:97%;  
+	left:0%;
+		background-color:#428B99;
+	color:#E4E8E9;
+	text-align:center;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	 border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+     outline: 0px solid #000000;
+	 padding:3px 0px 3px 4px;
+	 letter-spacing: 0.5px;
+	}	
+.frame_in_message_ava{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:94%;	
+	left:3%;
+    margin-top: 0px;
+	margin-bottom: 4px;
+	border-radius: 5px 5px 5px 5px;
+    border: 1px ridge #C7D5D7;		
+    outline: 0px solid #000000;
+	padding:2% 0% 4% 0%;
+	}	
+.name_of_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:100%;  
+	text-align:center;
+	padding:1% 0% 1% 0%;
+	letter-spacing: 0.3px;
+	font-size: 11pt;
+	background-color:#DBDFE0;
+	margin-bottom:2%;
+
+     outline: 0px solid #000000;
+	}
+.name_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:50%;  
+	text-align:center;
+	padding:2% 0% 0% 0%;
+    outline: 0px solid #000000;
+	font-size: 11pt;
+	color: #F1F1F1; /* Цвет текста */
+	}
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:18px; 
+	margin-left: 5%;
+    outline: 0px solid #000000;
+	
+	}
+
+@media screen and (max-width: 360px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:18px; 
+	margin-left: 5%;
+    outline: 0px solid #000000;
+	}
+
+	
+}
+@media screen and (min-width: 410px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:18px; 
+	margin-left: 5%;
+    outline: 0px solid #000000;
+	}
+
+	
+}
+
+@media screen and (max-width: 320px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:14px; 
+	margin-left: 5%;
+    outline: 0px solid #000000;
+	}
+
+	.name_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:50%;  
+	text-align:center;
+	padding-top:0px;
+    outline: 0px solid #000000;
+	padding:1% 0% 0% 0%;
+	}
+	
+	#form_block{
+    outline: 0px solid #FF0000;
+    position:absolute;
+    left:10%;
+    width:80%;
+    top:28%;
+    padding-top:2%;
+    padding-bottom:1%;
+    height:auto;
+    overflow: auto;
+    border: 2px ridge #EFEFEF;
+    border-radius: 10px 10px 10px 10px;
+ 
+ 
+}
+	
+	#logo_text { 
+	position:absolute; 
+    height:25%;                   /* text area height */
+    width:70%;
+    background-image: url(../img/logo/logo-smart_ft_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:5%;
+	left:15%;
+	outline: 0px solid #555;
+    }
+	
+}
+	
+@media screen and (min-width: 750px) {    /* Поставь 640, когда на сервер загрузишь */ 
+   
+.loading_of_avatar{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:40%; 
+    height:14px; 
+	margin-left: 5%;
+    outline: 0px solid #000000;
+	
+	}
+
+.file_upload_0{
+padding:5% 0% 0% 0%;
+
+	
+}
+
+.file_upload{
+padding:5% 0% 0% 0%;
+
+	
+}
+
+
+	
+}		
+	
+.entry_in_message{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:100%; 
+  	
+
+
+     outline: 0px solid #000000;
+	}
+	
+.entry_now{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:48%;  
+    outline: 0px solid #FF4500;
+	font-size: 10pt;
+	padding-left:2%;
+    color: #F1F1F1; /* Цвет текста */
+	}
+.entry_then{
+    position:relative; 
+    float:left;	/* position in the center of the screen */                   /* text area height */
+    width:50%;  
+    outline: 0px solid #008000;
+	font-size: 10pt;
+    color: #F1F1F1; /* Цвет текста */
+	
+	}	
+#message_input{
+    position:relative; 
+    width:50px; 
+    height:20px;	
+    outline: 0px solid #008000;
+	font-size:16px;
+	margin-left:3px;
+	padding-left:2px;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	
+	
+	}
+#message_input_then{
+    position:relative; 
+    width:50px; 
+    height:20px;		
+    outline: 0px solid #008000;
+	font-size:16px;
+	margin-left:5px;
+	padding-left:2px;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 
+	
+	}	
+
+
+
+.file_upload_0{
+    position: absolute;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 150%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #000000  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9996;
+
+	
+}
+
+
+.file_upload{
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 150%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#F0F4F5;
+    background-image:linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #F0F4F5 50%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.50, #F0F4F5));
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #000000  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9997;
+
+	
+}
+
+.block_center_text {
+    position:absolute;             /* position in the center of the screen */
+    top: 50%;
+    left: 50%;
+	width:100%;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);
+  	
+}
+.block_center_text_overflow {
+    position:absolute;             /* position in the center of the screen */
+    top: 57%;
+    left: 50%;
+	width:100%;
+	outline: 0px solid #FF0000;
+    transform: translate(-50%, -50%);
+  	
+}
+
+
+.file_upload:active {
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 150%; 
+    width: 100%; 	/* example */
+    line-height: 2em ;      /* the same as height */
+	text-align:center;
+		background-color:#428B99;
+	outline: 0px solid #008000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	color: #E4E8E9  ;
+	border-radius: 5px 5px 5px 5px;
+     border: 1px ridge #90949C;
+	 z-index:9997;
+
+	
+}
+
+
+
+.file_upload > button{
+    float: right;
+    width: 8em;            /* example */
+    height: 100%;
+	outline: 0px solid #008000;
+}
+.file_upload > div{
+    padding-left: 0em  ;    /* example */
+}
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+}
+.radio + label {
+  position: relative;
+
+  cursor: pointer;
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 24px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90949C;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 27px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #55BACE;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+.radio:focus + label:before {
+  box-shadow: 0 0 0 3px #FEC762;
+}
+
+
+.radio_2 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+}
+.radio_2 + label {
+  position: relative;
+
+  cursor: pointer;
+}
+.radio_2 + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90949C;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio_2 + label:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #55BACE;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s;
+}
+.radio_2:checked + label:after {
+  opacity: 1;
+}
+.radio_2:focus + label:before {
+  box-shadow: 0 0 0 3px #FEC762;
+}
+
+
+#submit_data {
+
+
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:18px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	 	background-color:#EFEFEF;
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+
+	 border-radius: 5px 5px 5px 5px;
+     border: 0px ridge #90949C;
+	 padding:3% 0% 3% 0%;
+	 
+	
+	  font-weight:500;
+
+}
+
+#submit_data:active {
+
+
+ height:100%;                   /* text area height   */
+    width:100%;
+	 font-style:normal;
+     font-size:20px;
+	 letter-spacing: 0.3px;
+	 outline: 0px solid #FF0000;
+	 	background-color:#428B99;
+
+	 color: #E4E8E9;
+	 border-radius: 5px 5px 5px 5px;
+     border: 0px ridge #90949C;
+	
+	  font-weight:500;
+
+}
+
+
+
+
+
+
+#iphone_form_pr {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:85%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+    background-image: url(../html/manual/man_s.png);  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+
+#iphone_manual_person_pr {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_person_pr.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+#iphone_manual_data_form {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_form.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+
+
+#iphone_manual_muscul_target {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_muscul_target.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+#iphone_manual_plan_trenirovki {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_plan_trenirovki.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+#iphone_manual_upragmenie {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_upragnenie_1.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+#iphone_manual_upr_result {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_upragnenie_1_rezult.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+#iphone_manual_tren_end {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:74%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:3%;
+	background-image: url(../img/logo/manual_tren_end.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+	outline: 0px solid #555;
+	
+}
+
+
+
+
+#progress_bar_manual_0 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_0.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+	outline: 0px solid #555;
+	
+}
+
+#progress_bar_manual {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_2 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_2.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_3 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_3.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_4 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_4.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_5 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_5.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+#progress_bar_manual_6 {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:3%;                   /* text area height */
+    width:80%; 
+	left:10%;
+	top:76.5%;
+    background-image: url(../img/logo/manual_progress_bar_6.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+	outline: 0px solid #555;
+	
+}
+.info_manual {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:15%;                   /* text area height */
+    width:90%; 
+	left:5%;
+	top:80.5%;
+	background-color:#F1F3F4;
+    border-radius: 10px 10px 10px 10px;
+     border: 2px ridge #90949C;
+    outline: 0px solid #555;
+	
+	
+}
+
+.info_manual_text {
+   overflow: auto;
+    position:absolute;             /* position in the center of the screen */
+    height:96%;                   /* text area height */
+    width:96%; 
+	left:2%;
+	top:2%;
+
+    border-radius: 10px 10px 10px 10px;
+     border: 0px ridge #90949C;
+    outline: 0px solid #555;
+	text-align: center;
+	
+}
+
+.info_manual {
+   
+    position:absolute;             /* position in the center of the screen */
+    height:15%;                   /* text area height */
+    width:90%; 
+	left:5%;
+	top:80.5%;
+	background-color:#F1F3F4;
+    border-radius: 10px 10px 10px 10px;
+     border: 2px ridge #90949C;
+    outline: 0px solid #555;
+	
+	
+}
+
+.info_manual_text {
+    overflow: auto;
+    position:absolute;             /* position in the center of the screen */
+    height:96%;                   /* text area height */
+    width:96%; 
+	left:2%;
+	top:2%;
+
+    border-radius: 10px 10px 10px 10px;
+     border: 0px ridge #90949C;
+    outline: 0px solid #555;
+	text-align: center;
+	
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 0px;
+    border-radius:0px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #F1F3F4; 
+    -webkit-box-shadow: inset 0 0 6px #F1F3F4; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #F1F3F4; 
+}
+
+
+
+#message_manual{padding:3px 3px 3px 5px;display:none;}
+#message_manual .new{opacity: 0;}
+#message_manual .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
+  
+  
+  
+ #p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #428B99;
+z-index: 9998;}
+
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(../img/logo/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;} 

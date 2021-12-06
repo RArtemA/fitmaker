@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+    <head>
+	  <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+				<meta http-equiv="refresh" content="0; URL='html/profile_page/index_profile.html'">
+        -->
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+
+		<script type = "text/javascript" >
+    history.pushState(null, null, location.href);
+    history.back();
+    history.forward();
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+		
+		document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    window.open = cordova.InAppBrowser.open;
+}
+</script> 
+	
+        <link rel="stylesheet" type="text/css" href="../../css/index_profile.css">
+		<link rel="prefetch prerender" href="../../html/authorization/profile_form.html" />
+		<link rel="prefetch prerender" href="../../html/manual/index_profile_info.html" />
+        <title>Авторизация</title>
+	
+		
+  
+  
+
+
+    </head>
+   <body>
+  			<script type="text/javascript">
+	window.onload = function () {   
+     localStorage.removeItem("data_form");	
+     	 // Пропуск страницы входа в случае, если присутствует username.
+ if (localStorage.getItem("username")) {
+	location.href ="../../html/profile_page/index_profile.html"; 
+ };                   
+		//  Скрипт невозврата назад автозагрузка
+};
+	</script>
+
+
+
+   
+
+
+	<div class="body_authorization">  
+	 <div id="logo_text"> </div>  
+	 <div class="input_block">
+	 	  <div id="error-message" style=" width: 100%; background-color: #E8E8E8; color: #000000; height: 34%; position:absolute;text-align:center; font-size: 16px; text-transform:none
+;font-family: Tahoma, Geneva, sans-serif; border: 4px ridge;display: none;border-width: 3px 3px 3px 3px; border-color: #ffffff;border-radius: 5px;z-index: 9999; font-family: Geneva, Arial, Helvetica, sans-serif;"> <div class="block_center_text"><strong>Вас нет в базе</strong><br>Похоже, вы слегка ошиблись в адресе эл. почты или пароле.</div></div>
+	 <form action="https://fitmaker.app/rosolov_fitness_app/registration/login.php" method="POST" id="autorization_login">
+      <div class="email_text">  <div class="block_center_text"> Email </div>   </div> 
+      <div class="email_input"> <input type="email"  name="authorization_Email" id="authorization_Email" value="demo@fitmaker.app"> </div> 
+      <div class="password_text"> <div class="block_center_text"> Пароль</div> </div> 
+	  <div class="password_input"> 
+	  <input  name="authorization_Password" id="authorization_Password" type="password" value="123456789" > </div>
+	  <div class="login_button"><input type="submit" id="submit_autorization" onclick="location.href='index_profile_demo.html';" value="Войти">  </div>
+	 
+     </form>
+
+	 
+	 <div class="сreate_account"> <div class="block_center_text">Вам доступна DEMO версия </div> </div>
+	  <div class="demo_in_index" onclick="location.href='../../index.html';"> <div class="block_center_text">ONLINE </div> </div>
+	 
+	
+	
+	 
+	 
+	
+    
+	   </div>
+	  
+	  
+	
+	  
+			
+<!-- Начало скрипта подсказок -->
+    
+
+
+
+
+
+
+		<script>		
+		
+  $(function() {
+	  
+	  $(document).ready(function(){
+ 
+$(".mymagicoverbox_сreate_account").click(function()
+{
+ $('#myfond_gris_сreate_account').fadeIn(200);
+ var iddiv = $(this).attr("iddiv");
+ $('#'+iddiv).fadeIn(200);
+ $('#myfond_gris_сreate_account').attr('opendiv',iddiv);
+ return false;
+});
+ 
+$('#myfond_gris_сreate_account, .mymagicoverbox_fermer, .block_no').click(function()
+{
+ var iddiv = $("#myfond_gris_сreate_account").attr('opendiv');
+ $('#myfond_gris_сreate_account').fadeOut(300);
+ $('#'+iddiv).fadeOut(300);
+});
+ 
+ 
+
+
+ 
+});
+    // здесь последующий код...
+  });
+
+
+
+
+
+
+
+
+    // this is the id of the form
+    $("#autorization_login").submit(function(e) {
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(), // serializes the form's elements.
+            success: function(data) {
+                if (data == "FALSE") {
+					$("#error-message").hide();
+					setTimeout(function(){
+                    $("#error-message").fadeIn();
+                                       }, 1000);
+                  setTimeout(function(){
+                    $("#error-message").fadeOut();
+                                       }, 5000);
+                   
+                } else {
+                    
+                    var username = data;
+                    localStorage.setItem("username", username);
+					
+				    location.href ="../../html/profile_page/index_profile.html"; 
+		        $('#submit_autorization').prop('disabled', true);
+                }
+            }
+        });
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+
+
+
+
+
+
+
+
+
+
+  $( document ).ready(function() {
+    if (localStorage.getItem('registered') === 'true') {
+	  $('.mymagicoverbox_сreate_account').hide();
+    }
+ });
+
+
+function preloadImages(array) {
+    if (!preloadImages.list) {
+        preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.onload = function() {
+            var index = list.indexOf(this);
+            if (index !== -1) {
+                // remove image from the array once it loaded
+                // for memory consumption reasons
+                list.splice(index, 1);
+            }
+        }
+        list.push(img);
+        img.src = array[i];
+    }
+}
+
+
+
+preloadImages(["../../img/logo/logo-smart_ft_2.png", "../../img/logo/foto2.png", "../../img/timer_form.png", "../../img/chat.png", "../../img/info.png", "../../img/logo/chat_avatar.png", "../../img/fon_chat.jpg", "../../img/logo/cloud_tail_1.png", "../../img/logo/cloud_tail_2.png", "../../img/logo/manual_person_pr.png"]);
+
+</script>
+
+                           
+
+
+	 </div> 
+ 
+
+
+       <script type="text/javascript" src="../../cordova.js"></script>
+        <script type="text/javascript" src="../../js/index.js"></script>
+		
+		
+
+
+    </body>
+</html>

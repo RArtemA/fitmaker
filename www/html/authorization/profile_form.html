@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache" />
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="../../css/index_manual.css">
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/language.js"></script>
+	<script type="text/javascript" src="../../js/backgr_mode_off.js"></script>
+    <script type="text/javascript" src="../../js/language.js"></script>
+		<script type="text/javascript">		
+		$(window).on('load', function () {
+         
+		
+    history.pushState(null, null, location.href);
+    history.back();
+    history.forward();
+    window.onpopstate = function () {
+        history.go(1);
+		
+ }
+    var $preloader = $('#p_prldr'),
+	$svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+	
+    $preloader.delay(1000).fadeOut('slow');
+	
+});
+</script>
+
+
+    <title>Форма ввода данных</title>
+
+</head>
+
+<body>
+<div id="p_prldr"> <div class="contpre"><span class="svg_anm"></span><br>Создание<br><small> пользователя</small></div></div>
+ <div class="body_manual_f"> 
+	<div id="logo_text"> </div> 
+	<div id="form_block"> 
+	
+
+                        <form name="complete_data" method="post" id="complete_data">
+                            <div style="display: none;">
+                                <input type="hidden" id="name" name="name" value="">
+                                <input type="hidden" id="email" name="email" value="">
+                                <input type="hidden" id="tel" name="tel" value="">
+                                <script>
+                                    document.getElementById('name').value = localStorage.getItem('name');
+									document.getElementById('email').value = localStorage.getItem('email');
+									document.getElementById('tel').value = localStorage.getItem('tel');
+								</script>
+                                
+                            </div>
+                            <div class="frame_in_message">
+                                <div class="name_of_message"><strong> Вес </strong></div>
+                                <div class="entry_in_message">
+                                    <div class="entry_now"> Сейчас <input required type="tel" name="weight_now" id="message_input"></div>
+                                    <div class="entry_then"> Цель <input required type="tel" name="weight_target" id="message_input_then"></div>
+                                </div>
+                            </div>
+                            <div class="frame_in_message">
+                                <div class="name_of_message"><strong> Объем бицепса </strong></div>
+                                <div class="entry_in_message">
+                                    <div class="entry_now"> Сейчас <input required type="tel" name="biceps_now" id="message_input"> </div>
+                                    <div class="entry_then"> Цель <input required type="tel" name="biceps_target" id="message_input_then"></div>
+                                </div>
+                            </div>
+                            <div class="frame_in_message">
+                                <div class="name_of_message"><strong> Объем бедер </strong></div>
+                                <div class="entry_in_message">
+                                    <div class="entry_now"> Сейчас <input required type="tel" name="hips_now" id="message_input"></div>
+                                    <div class="entry_then"> Цель <input required type="tel" name="hips_target" id="message_input_then"></div>
+                                </div>
+                            </div>
+                            <div class="frame_in_message">
+                                <div class="name_of_message"><strong> Объем талии </strong></div>
+                                <div class="entry_in_message">
+                                    <div class="entry_now"> Сейчас <input required type="tel" name="waist_now" id="message_input"> </div>
+                                    <div class="entry_then"> Цель <input required type="tel" name="waist_target" id="message_input_then"> </div>
+                                </div>
+                            </div>
+                            <div class="frame_in_message">
+                                <div class="name_of_message"><strong> Похудение </strong></div>
+                                <div class="entry_in_message">
+                                    <div class="entry_now"><span style="margin-left:16px"> Да</span> <input required type="radio" class="radio" id="radio_yes" name="slim" value="Да" />
+                                        <label for="radio_yes"></label>
+                                    </div>
+                                    <div class="entry_then"><span style="margin-left:4px"> Нет</span><input required type="radio" class="radio_2" id="radio_no" name="slim" value="Нет" />
+                                        <label for="radio_no"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame_in_message_ava">
+                                <div class="name_of_avatar"><strong> Фото на аватар </strong></div>
+                                <div class="loading_of_avatar">
+								
+                                    <div class="file_upload_0"  >
+                                        <div class="block_center_text">Принято</div>
+                                    </div>
+									<div class="file_upload" id="file_upload" >
+                                        <div class="block_center_text">Выбрать</div><input type="file" id="file_input" name="photo" size="5"  accept="image/*" capture="camera"/>
+                                    </div>
+									
+                                </div>
+                            </div>
+                            <div class="frame_in_message_submit"><input type="submit" id="submit_data" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+
+    <!-- Конец блока всплывающих подсказок -->
+    <!-- Начало скрипта подсказок -->
+    <script>
+
+       
+
+    	$("#complete_data").submit(function( event ) {
+		event.preventDefault();
+
+		var formData = new FormData($("#complete_data").get(0));
+
+	    $.ajax({
+	        url: 'https://fitmaker.app/rosolov_fitness_app/registration/registerComplete.php',
+	        data: formData,
+	        processData: false,
+	        contentType: false,
+	        type: 'POST',
+	        success: function (data) {
+		        $('#submit_data').prop('disabled', true);
+		        localStorage.setItem('registered', 'true')
+				location.href = "../demo/index_demo.html";
+				
+	        }
+	    });
+
+			// Stop form from submitting normally
+
+		});
+    
+	
+
+	
+	
+
+	
+	// Изменение стиля кнопки после изменения состояния инпута файлового.
+		$('#file_input').change(function() {
+	  $('#file_upload').hide();
+	});
+	localStorage.removeItem("manual");	
+	localStorage.setItem('data_form', 'load');
+    </script>
+    <script type="text/javascript" src="../../cordova.js"></script>
+    <script type="text/javascript" src="../../js/index.js"></script>
+</body>
+
+</html>

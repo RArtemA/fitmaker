@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+    <head><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache" />
+
+        <meta name="format-detection" content="telephone=no">
+		
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="../../css/index_superset.css">
+		<script type="text/javascript">var cachebuster = Math.round(new Date().getTime() / 1000);var url = "https://fitmaker.app/rosolov_fitness_app/people/" + localStorage.getItem("username") + "/prilog.js?cb=" +cachebuster;document.write("<script src='" + url + "'><\/script>");</script><script type="text/javascript">if (typeof poryadkovy_nomer_tren == "undefined") {document.write("<meta http-equiv=\"Refresh\" content=\"5\" \/>")}</script><script type="text/javascript" src="../../js/function.js"></script>
+		<script type="text/javascript" src="../../js/language.js"></script><script type="text/javascript" src="../../js/backgr_mode.js"></script>
+		
+		
+	
+        <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script><title>Третье упражнение</title>
+		<script type = "text/javascript" >  
+history.pushState(null, null, location.href);history.back();history.forward();window.onpopstate = function () {history.go(1);};
+
+
+</script>		
+		
+    </head>
+<body onload=" ">
+
+	
+	    
+     <div id="p_prldr_3"> <div class="contpre"><span class="svg_anm_3" ></span><span class="svg_anm_fon" ></span><br><br><br><br><br>no Internet</div></div><script type="text/javascript">$('#p_prldr_3').hide(1);if (typeof poryadkovy_nomer_tren == "undefined") {$('#p_prldr_3').show(1);} </script><div class="header"> 
+	<div class="block_center_text">
+	<p>Суперсет </p>
+	  </div></div>
+	 <div class="form_choice" > 
+
+	 <form action id="gform-jquery" >
+	 <div class="radio_buttons">
+    <div> 
+        <input type="radio" name="" value="75 %" id="" knop5 onclick="$('#gform-jquery').submit();"  >
+        <label knop5 for="">75<span class="label_procent" >%</span></label>
+    </div>
+    <div>
+        <input type="radio" name="" value="85 %" id="" knop6 onclick="$('#gform-jquery').submit();">
+        <label knop6 for="">85<span class="label_procent" >%</span></label>
+    </div>
+    <div>
+        <input type="radio" name="" value="95 %" id="" knop7 onclick="$('#gform-jquery').submit();">
+        <label knop7 for="">95<span class="label_procent" >%</span></label>
+    </div>
+        <div>
+        <input type="radio" name="" value="100 %" id="" knop8 onclick="$('#gform-jquery').submit();">
+        <label knop8 for="">100<span class="label_procent" >%</span></label>
+    </div>
+	
+	<input type="hidden" name="" nomer_upr value="Третье-четвертое упражнение">   <!-- Установи Какое упражнение   -->
+	<input type="hidden" name="" upragnen id="exercise" value="">
+	<input type="hidden" name="" ves_snar id="ves_snaryada" value="">
+	<input type="hidden" name=""  podxod id="approach" value="">
+	
+	 <script>
+    input = document.getElementById('exercise'); 
+    exercise.value = upragnenie_3 + " и " + upragnenie_4;                //  Установи номера упражнений
+	input = document.getElementById('ves_snaryada'); 
+    ves_snaryada.value = "Вес: " + ves_upr_3_2p + " и " + ves_upr_4_2p;                //  Установи номера упражнений
+    input = document.getElementById('approach'); 
+    approach.value = "Два подхода суперсет";                
+ </script>
+
+    <p><input type="submit" ></p>
+
+	
+</div>
+	
+	</form>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+	$('#gform-jquery').submit(function(e){ 
+		e.preventDefault(); 
+		var form = $(this); 
+
+		
+		var errors = false; 
+		form.find('.req').each(function(){ 
+			$(this).removeClass('error'); 
+			if ($(this).val() == '') { 
+				$(this).addClass('error'); 
+				errors = true; 
+			}
+		});
+		if (errors) return false; 
+
+		var data = form.serialize(); 
+
+		$.ajax({ 
+            url: url_form_action, 
+            data: data, 
+            type: "POST", 
+            dataType: "xml", 
+            beforeSend: function(){ 
+            	form.find('button').attr('disabled'); 
+            },
+            statusCode: { 
+                0: function (){ 
+                location.href ="../upragnenie_4/upragnenie_4_end.html"; // Установи номер следующего упражнения 2 раза
+                },
+                200: function (){ 
+                	location.href ="../upragnenie_4/upragnenie_4_end.html"; // Установи номер следующего упражнения 2 раза
+                }
+            }
+		});
+	});
+});	
+		</script>
+		
+<script type="text/javascript">
+		$("input[knop5]").attr("id", knopka_75proc_id_for);
+		$("label[knop5]").attr("for", knopka_75proc_id_for);
+		$("input[knop6]").attr("id", knopka_85proc_id_for);
+		$("label[knop6]").attr("for", knopka_85proc_id_for);
+		$("input[knop7]").attr("id", knopka_95proc_id_for);
+		$("label[knop7]").attr("for", knopka_95proc_id_for);
+		$("input[knop8]").attr("id", knopka_100proc_id_for);
+		$("label[knop8]").attr("for", knopka_100proc_id_for);
+
+
+		
+		$("input[nomer_upr]").attr("name", nomer_upragnen);
+		$("input[upragnen]").attr("name", upragnenie);
+		$("input[ves_snar]").attr("name", ves_snarjad);
+		$("input[podxod]").attr("name", podxod);
+		
+		$(":radio").attr("name", knopka_5_name);
+		</script>
+	
+</div>
+
+	 
+	 
+	 
+	 </div>
+	  <div class="form_done" >
+      <div class="block_center_text"> <h2>Успех  выполнения <br>задач суперсета?</h2></div>
+	 </div>
+	 
+	 
+	 
+	 
+	
+	 
+	  
+	  
+       <script type="text/javascript" src="../../js/cordova.js"></script>
+        <script type="text/javascript" src="../../js/index.js"></script>
+
+
+
+        
+    </body>
+</html>
